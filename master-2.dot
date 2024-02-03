@@ -1,0 +1,31 @@
+// Diagram 2 - qd1d2 Components
+digraph qd1d2Components {
+    node [shape=box];
+
+    qd1d2 [label="qd1d2\nRobot"];
+    component_Brain [label="Brain"];
+    component_Limbs [label="Limbs"];
+    component_Sensors [label="Sensors"];
+    component_PowerSystem [label="Power System"];
+    component_Communication [label="Communication"];
+    component_Arms [label="Arms"];
+    component_Legs [label="Legs"];
+    component_Camera [label="Camera"];
+    component_Microphones [label="Microphones"];
+    component_Battery [label="Battery"];
+    component_WirelessModule [label="Wireless Module"];
+    component_Hands [label="Hands"];
+    component_Feet [label="Feet"];
+
+    qd1d2 -> component_Brain [label="has"];
+    qd1d2 -> component_Limbs [label="has"];
+    qd1d2 -> component_Sensors [label="has"];
+    component_Limbs -> component_Arms [label="has"];
+    component_Limbs -> component_Legs [label="has"];
+    component_Sensors -> component_Camera [label="has"];
+    component_Sensors -> component_Microphones [label="has"];
+    component_PowerSystem -> component_Battery [label="has"];
+    component_Communication -> component_WirelessModule [label="has"];
+    component_Arms -> component_Hands [label="has"];
+    component_Legs -> component_Feet [label="has"];
+}

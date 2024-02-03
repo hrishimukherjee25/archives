@@ -1,0 +1,42 @@
+digraph qd1d2Robot {
+    node [shape=box];
+
+    // Functionalities
+    navigation [label="Navigation and Locomotion"];
+    manipulation [label="Manipulation and Interaction"];
+    communication [label="Communication"];
+    perception [label="Sensory Perception"];
+    taskExecution [label="Task Execution"];
+    adaptation [label="Environmental Adaptation"];
+    learning [label="Learning and Adaptation"];
+    security [label="Security and Surveillance"];
+    energyManagement [label="Energy Management"];
+    diagnostic [label="Diagnostic and Maintenance"];
+    signalAnalysis [label="Signal Analysis"];
+    touchScreen [label="Touch Screen with Gloves"];
+
+    // Relationships
+    navigation -> {obstacleDetection, preciseNavigation};
+    manipulation -> {graspingObjects, environmentInteraction};
+    communication -> {wirelessCommunication, speechRecognition, visualCommunication};
+    perception -> {visualPerception, auditoryPerception, tactileSensing};
+    taskExecution -> {autonomousTasks, userCommands};
+    adaptation -> {environmentalAdaptation, behaviorAdjustment};
+    learning -> {machineLearning, adaptiveBehavior};
+    security -> {monitoring, intruderDetection};
+    energyManagement -> {efficientConsumption, batteryManagement};
+    diagnostic -> {selfDiagnostic, maintenance};
+    signalAnalysis -> {analyzeSignals, signalProcessing};
+    touchScreen -> {gloveFriendlyInteraction, userControl};
+
+    // Robot Node
+    qd1d2Robot [label="qd1d2 Robot" shape=box, color=blue];
+
+    // Connect Functionalities to Robot
+    qd1d2Robot -> {navigation, manipulation, communication, perception, taskExecution, adaptation, learning, security, energyManagement, diagnostic, signalAnalysis, touchScreen};
+
+    // Styling
+    node [fontname="Arial", fontsize=10];
+    edge [fontname="Arial", fontsize=8, color=darkgreen];
+
+}

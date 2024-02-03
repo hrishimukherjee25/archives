@@ -1,0 +1,35 @@
+digraph G {
+    node [shape=record, fontname="Arial"];
+    
+    classPermutationGenerator [label="{PermutationGenerator | +__init__(directions, choices) | +generate_permutations(item_type, item_count) | +generate_permutation(item_type, item_count, direction, choice)}"];
+
+    classEnhancedPermutationGenerator [label="{EnhancedPermutationGenerator | +__init__(directions, choices) | +generate_permutations(item_type, item_count) | +generate_permutation(item_type, item_count, direction, choice) | +generate_combinations(items)}"];
+
+    classEnhancedPermutationGenerator -> classPermutationGenerator [arrowhead=empty, label="inherits"];
+
+    mainFunction [label="{main() | +text | +aryas_text | +formula_text | +permutations_text}"];
+
+    classEnhancedPermutationGenerator -> mainFunction [arrowhead=empty, label="uses"];
+
+    directionsAndChoices [label="{Directions and Choices | +directions | +choices}"];
+
+    mainFunction -> directionsAndChoices [arrowhead=empty, label="uses"];
+
+    sentencePermutations [label="{Sentence Permutations | +generate_permutations | +generate_permutation}"];
+    
+    classPermutationGenerator -> sentencePermutations [arrowhead=empty, label="uses"];
+
+    sentenceCombinations [label="{Sentence Combinations | +generate_combinations}"];
+
+    classEnhancedPermutationGenerator -> sentencePermutations [arrowhead=empty, label="uses"];
+    classEnhancedPermutationGenerator -> sentenceCombinations [arrowhead=empty, label="uses"];
+
+    wordPermutations [label="{Word Permutations | +generate_permutations | +generate_permutation}"];
+
+    classPermutationGenerator -> wordPermutations [arrowhead=empty, label="uses"];
+
+    wordCombinations [label="{Word Combinations | +generate_combinations}"];
+
+    classEnhancedPermutationGenerator -> wordPermutations [arrowhead=empty, label="uses"];
+    classEnhancedPermutationGenerator -> wordCombinations [arrowhead=empty, label="uses"];
+}

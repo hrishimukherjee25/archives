@@ -1,0 +1,9 @@
+digraph ContractOfferDiagram {
+    node [shape=record, fontname="Arial", fontsize=12];
+    
+    ContractOffer [label="{ContractOffer|+ host_name: str|+ attendant_name: str|+ address: str|+ annual_salary: int|+ start_year: int|+ end_year: int|+ display_offer_details(): void}"];
+    
+    main [label="{main()|+ contract_offer: ContractOffer}"];
+    
+    main -> ContractOffer [arrowhead=none];
+}

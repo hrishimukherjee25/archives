@@ -1,0 +1,61 @@
+digraph qd1d2 {
+    rankdir=LR;
+
+    subgraph cluster_super_scientific_phenomena {
+        label="SuperScientificPhenomena";
+        color=lightblue;
+
+        Phenomena [label="SuperScientificPhenomena", shape=box];
+        validate [label="validate()", shape=ellipse];
+    }
+
+    subgraph cluster_quantum_circuit {
+        label="QuantumCircuit";
+        color=lightblue;
+
+        Circuit [label="QuantumCircuit", shape=box];
+        fry [label="fry()", shape=ellipse];
+        get_status [label="get_status()", shape=ellipse];
+    }
+
+    subgraph cluster_program_00 {
+        label="Program 00";
+        color=lightgreen;
+
+        SuperScientificPhenomena [label="SuperScientificPhenomena\n- name: str\n- assertion: str\n---\n+ validate(): void", shape=box];
+        QuantumCircuit [label="QuantumCircuit\n---\n+ fry(): void\n+ get_status(): str", shape=box];
+        super_reductionism_pyramid [label="super_reductionism_pyramid()\n---\nPrints a Super Reductionism Entails Pyramid message", shape=box];
+        super_relativity [label="super_relativity()\n---\nPrints a Super Relativity is Real message", shape=box];
+        super_string_theory [label="super_string_theory()\n---\nPrints a Super String Theory is real message", shape=box];
+        main [label="main()\n---\nMain program logic", shape=box];
+    }
+
+    main [label="main()", shape=ellipse, color=green];
+    super_reductionism_pyramid [label="super_reductionism_pyramid()", shape=ellipse];
+    super_relativity [label="super_relativity()", shape=ellipse];
+    super_string_theory [label="super_string_theory()", shape=ellipse];
+
+    scientific_phenomena_validate [label="Scientific Phenomena\n.validate()", shape=box, color=lightblue];
+    quantum_circuit_fry [label="Quantum Circuit\n.fry()", shape=box, color=lightblue];
+    quantum_circuit_get_status [label="Quantum Circuit\n.get_status()", shape=box, color=lightblue];
+
+    main -> super_reductionism_pyramid;
+    main -> super_relativity;
+    main -> super_string_theory;
+    main -> scientific_phenomena_validate [color=green];
+    main -> quantum_circuit_fry [color=green];
+
+    super_reductionism_pyramid -> Phenomena;
+    super_relativity -> Phenomena;
+    super_string_theory -> Phenomena;
+
+    scientific_phenomena_validate -> Phenomena;
+
+    quantum_circuit_fry -> Circuit;
+    quantum_circuit_get_status -> Circuit;
+    scientific_phenomena_validate -> validate [color=green];
+    quantum_circuit_get_status -> get_status [color=green];
+
+    main -> SuperScientificPhenomena;
+    main -> QuantumCircuit;
+}

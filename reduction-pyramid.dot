@@ -1,0 +1,214 @@
+digraph qd1d2 {
+    rankdir=LR;
+
+    subgraph cluster_super_macroscopic_level {
+        label="Super Macroscopic Level";
+        color=lightblue;
+
+        GlobalSystemDynamics [label="Global System Dynamics", shape=box];
+        EnvironmentalInfluences [label="Environmental Influences", shape=box];
+        SocietalImpact [label="Societal Impact and Consequences", shape=box];
+        HighLevelCharacteristics [label="High-Level System Characteristics", shape=box];
+    }
+
+    subgraph cluster_super_meso_level {
+        label="Super Meso Level";
+        color=lightblue;
+
+        EconomicSubsystem [label="Economic Subsystem", shape=box];
+        TechnologicalInfrastructure [label="Technological Infrastructure", shape=box];
+        PoliticalStructures [label="Political Structures", shape=box];
+        CulturalSocialInfluences [label="Cultural and Social Influences", shape=box];
+        InteractionsAmongGlobalSystems [label="Interactions among Global Systems", shape=box];
+    }
+
+    subgraph cluster_super_microscopic_level {
+        label="Super Microscopic Level";
+        color=lightblue;
+
+        EconomicSubsystemMarket [label="Economic Subsystem - Market Dynamics", shape=box];
+        EconomicSubsystemLabor [label="Economic Subsystem - Labor Structures", shape=box];
+        TechnologicalInfrastructureInfo [label="Technological Infrastructure - Information Systems", shape=box];
+        TechnologicalInfrastructureComm [label="Technological Infrastructure - Communication Networks", shape=box];
+        PoliticalStructuresGov [label="Political Structures - Government Policies", shape=box];
+        PoliticalStructuresIntl [label="Political Structures - International Relations", shape=box];
+        SocialInfluencesCultural [label="Social Influences - Cultural Norms", shape=box];
+        SocialInfluencesDemographic [label="Social Influences - Demographic Factors", shape=box];
+        InteractionsLocalizedMicro [label="Interactions at Localized Micro Levels", shape=box];
+    }
+
+    subgraph cluster_super_molecular_level {
+        label="Super Molecular Level";
+        color=lightblue;
+
+        MarketDynamicsSpecific [label="Market Dynamics - Specific Market Forces and Trends", shape=box];
+        InfoSystemsIndividual [label="Information Systems - Individual Software Components", shape=box];
+        GovPoliciesSpecific [label="Government Policies - Specific Policy Instruments", shape=box];
+        CulturalNormsSpecific [label="Cultural Norms - Specific Cultural Practices", shape=box];
+        DemographicSpecific [label="Demographic Factors - Population Dynamics", shape=box];
+        InteractionsMolecularComponents [label="Interactions among Molecular Components", shape=box];
+    }
+
+    subgraph cluster_super_atomic_level {
+        label="Super Atomic Level";
+        color=lightblue;
+
+        EconomicIndicatorsMetrics [label="Specific Economic Indicators and Metrics", shape=box];
+        InfoSystemsSourceCode [label="Source Code and Algorithms of Information Systems", shape=box];
+        LegislativeTextsFrameworks [label="Legislative Texts and Legal Frameworks", shape=box];
+        CulturalPracticesTraditions [label="Detailed Cultural Practices and Traditions", shape=box];
+        GeneticBiologicalFactors [label="Genetic and Biological Factors within Demographics", shape=box];
+        IndividualInteractionsInfluence [label="Individual Interactions and Influence Mechanisms", shape=box];
+    }
+
+    // Connectors
+    GlobalSystemDynamics -> EnvironmentalInfluences;
+    GlobalSystemDynamics -> SocietalImpact;
+    GlobalSystemDynamics -> HighLevelCharacteristics;
+
+    EconomicSubsystem -> TechnologicalInfrastructure;
+    EconomicSubsystem -> PoliticalStructures;
+    EconomicSubsystem -> CulturalSocialInfluences;
+    EconomicSubsystem -> InteractionsAmongGlobalSystems;
+
+    EconomicSubsystemMarket -> EconomicSubsystem;
+    EconomicSubsystemLabor -> EconomicSubsystem;
+    TechnologicalInfrastructureInfo -> TechnologicalInfrastructure;
+    TechnologicalInfrastructureComm -> TechnologicalInfrastructure;
+    PoliticalStructuresGov -> PoliticalStructures;
+    PoliticalStructuresIntl -> PoliticalStructures;
+    SocialInfluencesCultural -> CulturalSocialInfluences;
+    SocialInfluencesDemographic -> CulturalSocialInfluences;
+    InteractionsLocalizedMicro -> CulturalSocialInfluences;
+
+    MarketDynamicsSpecific -> EconomicSubsystemMarket;
+    InfoSystemsIndividual -> TechnologicalInfrastructureInfo;
+    GovPoliciesSpecific -> PoliticalStructuresGov;
+    CulturalNormsSpecific -> SocialInfluencesCultural;
+    DemographicSpecific -> SocialInfluencesDemographic;
+    InteractionsMolecularComponents -> InteractionsLocalizedMicro;
+
+    EconomicIndicatorsMetrics -> MarketDynamicsSpecific;
+    InfoSystemsSourceCode -> InfoSystemsIndividual;
+    LegislativeTextsFrameworks -> GovPoliciesSpecific;
+    CulturalPracticesTraditions -> CulturalNormsSpecific;
+    GeneticBiologicalFactors -> DemographicSpecific;
+    IndividualInteractionsInfluence -> IndividualInteractionsInfluence;
+}
+
+
+
+
+  ________ ________ ________ ________ ________ ________
+ /        |        |        |        |        |        \
+| 1. Super| 2. Super| 3. Super| 4. Super| 5. Super|        |
+| Macrosc. |   Meso   |Microsc. |Molecular|  Atomic  |        |
+| Level   |   Level  | Level   | Level   | Level   |        |
+|_________|_________|_________|_________|_________|________|
+| 1 - Glob | 5 - Eco | 10 - Eco| 19 - Mar| 25 - Spe|        |
+| 2 - Env  | 6 - Tec | 11 - Eco| 20 - Inf| 26 - Sou|        |
+| 3 - Soc  | 7 - Pol | 12 - Tec| 21 - Gov| 27 - Leg|        |
+| 4 - Hig  | 8 - Cul | 13 - Tec| 22 - Cul| 28 - Det|        |
+|         | 9 - Int | 14 - Pol| 23 - Dem| 29 - Gen|        |
+|         |         | 15 - Pol| 24 - Int| 30 - Ind|        |
+|         |         | 16 - Soc|         |         |        |
+|         |         | 17 - Soc|         |         |        |
+|         |         | 18 - Int|         |         |        |
+ \_______/ \_______/ \_______/ \_______/ \_______/ \______/
+
+
+
+                ________
+               |        |
+      _________|________|_________
+     |         |        |         |
+ ________  ________  ________  ________
+|        ||        ||        ||        |
+|________||________||________||________|
+    1. Super Macroscopic Level
+
+ ________                    ________
+|        |                  |        |
+|________|   ________       |________|
+|        |  |        |      |        |
+|________|__|________|______|________|
+ 2. Super Meso Level         3. Super Microscopic Level
+
+ ________                    ________
+|        |                  |        |
+|________|   ________       |________|
+|        |  |        |      |        |
+|________|__|________|______|________|
+4. Super Molecular Level    5. Super Atomic Level
+
+
+             ________
+            |   15   |
+     _______|___|____|_______
+    |       |   10  |       |
+  ________  ________  ________
+ |   5    ||   12   ||   8    |
+ |___|____||___|____||___|____|
+    1. Super Macroscopic Level
+
+ ________                    ________
+|   20   |                  |   18   |
+|___|____|   ________       |___|____|
+|   6    |  |   14   |      |   9    |
+|___|____|__|___|____|______|___|____|
+ 2. Super Meso Level         3. Super Microscopic Level
+
+ ________                    ________
+|   25   |                  |   22   |
+|___|____|   ________       |___|____|
+|   13   |  |   16   |      |   11   |
+|___|____|__|___|____|______|___|____|
+4. Super Molecular Level    5. Super Atomic Level
+
+
+
+Certainly! Here's the information presented in a table:
+
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+\text{Equation} & \text{Ranking} & \text{Z-Value (t-distribution)} \\
+\hline
+e = (f \cdot p \cdot i \cdot m^2 \cdot Z)/f & 7 & 8.986028 \times 10^{15} \\
+\hline
+e = p \cdot i \cdot m^2 \cdot Z & 6 & 5.257026 \times 10^{15} \\
+\hline
+e_1 & 1 & 1.55709 \times 10^{15} \\
+\hline
+e_2 & 13 & -2.74991 \times 10^{15} \\
+\hline
+e_3 & 12 & -5.88457 \times 10^{15} \\
+\hline
+e_4 & 9 & -0.696876 \times 10^{15} \\
+\hline
+e_5 & 11 & -3.61967 \times 10^{15} \\
+\hline
+e_6 & 2 & 5.257026 \times 10^{15} \\
+\hline
+e_7 & 3 & 3.77496 \times 10^{15} \\
+\hline
+e_8 & 15 & -6.88765 \times 10^{15} \\
+\hline
+e_9 & 5 & 0.78545 \times 10^{15} \\
+\hline
+e_{10} & 10 & -2.92655 \times 10^{15} \\
+\hline
+e_{11} & 4 & 8.986028 \times 10^{15} \\
+\hline
+e_{12} & 8 & 6.906404 \times 10^{15} \\
+\hline
+e_{13} & 6 & 0.062916 \times 10^{15} \\
+\hline
+e_{14} & 4 & 2.263776 \times 10^{15} \\
+\hline
+e_{15} & 14 & -1.41441 \times 10^{15} \\
+\hline
+\end{array}
+\]
+
+Note: The Z-Values are derived from the t-scores associated with each equation in the t-distribution with 10 degrees of freedom.

@@ -1,0 +1,16 @@
+digraph Program10 {
+    node [shape=record, fontname="Arial"];
+
+    ExtraterrestrialSubspecies [label="{ExtraterrestrialSubspecies|+ name: str|+ alternate_names: list|+ description: str|---|+ provide_insight(): void}"];
+    CelestialAsteroid [label="{CelestialAsteroid|+ asteroid_blocks: list|---|+ showcase_blocks(): void}"];
+    ComplexContiguousBlock [label="{ComplexContiguousBlock|+ block_category: str|+ block_values: list|---|+ visualize_block(): void}"];
+
+    ExtraterrestrialSubspecies -> CelestialAsteroid [label="represents"];
+    CelestialAsteroid -> ComplexContiguousBlock [label="contains"];
+
+    execute_program [label="{execute_program()|---|}"];
+
+    ExtraterrestrialSubspecies -> execute_program;
+    CelestialAsteroid -> execute_program;
+    ComplexContiguousBlock -> execute_program;
+}

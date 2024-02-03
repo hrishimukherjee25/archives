@@ -1,0 +1,53 @@
+digraph G {
+    node [shape=record, fontname="Arial"];
+
+    MetaphysicalEntity [label="{MetaphysicalEntity|essence: str|existence: str|manifest_entity(): void}" shape=record];
+    HyperEvent [label="{HyperEvent|description: str|date: str|location: str|announce_hyper_event(): void}" shape=record];
+
+    MetaphysicalEntity -> HyperEvent [label="Inheritance"];
+
+    hyper_event_1 [label="{HyperEvent|description: \"Quantum Entanglement Symposium\"|date: \"September 19, 2022\"|location: \"Nexus of Realities\"}" shape=record];
+    hyper_event_2 [label="{HyperEvent|description: \"Transcendence Meditation Session\"|date: \"September 16, 2022\"|location: \"Interstellar Sanctuary\"}" shape=record];
+    hyper_event_3 [label="{HyperEvent|description: \"Cosmic Unity Summit\"|date: \"September 16, 2022\"|location: \"Celestial Nexus\"}" shape=record];
+    hyper_event_4 [label="{HyperEvent|description: \"Ethereal Harmonics Gathering\"|date: \"August 18, 2023\"|location: \"Astral Confluence\"}" shape=record];
+    hyper_event_5 [label="{HyperEvent|description: \"Fear Confrontation Workshop\"|date: \"August 20, 2022\"|location: \"Multiverse Nexus, Alpha Quadrant\"}" shape=record];
+    hyper_event_6 [label="{HyperEvent|description: \"Meta-awareness Symposium\"|date: \"June 2, 2022\"|location: \"Cosmic Web Observatory\"}" shape=record];
+    hyper_event_7 [label="{HyperEvent|description: \"Temporal Nexus Exploration\"|date: \"June 2, 2022\"|location: \"Eternal Void Junction\"}" shape=record];
+    hyper_event_8 [label="{HyperEvent|description: \"Transcendent Empire Assembly\"|date: \"May 31, 2022\"|location: \"Celestial Capital\"}" shape=record];
+    hyper_event_9 [label="{HyperEvent|description: \"Quantum Principles Congress\"|date: \"August 18, 2023\"|location: \"Quantum Realm Hub\"}" shape=record];
+    hyper_event_10 [label="{HyperEvent|description: \"Reality Matrix Analysis\"|date: \"May 19, 2022\"|location: \"Akashic Records Auditorium\"}" shape=record];
+    hyper_event_11 [label="{HyperEvent|description: \"Cosmic Confederation Assembly\"|date: \"August 19, 2023\"|location: \"Galactic Nexus\"}" shape=record];
+
+    hyper_event_1 -> HyperEvent [label="Inheritance"];
+    hyper_event_2 -> HyperEvent [label="Inheritance"];
+    hyper_event_3 -> HyperEvent [label="Inheritance"];
+    hyper_event_4 -> HyperEvent [label="Inheritance"];
+    hyper_event_5 -> HyperEvent [label="Inheritance"];
+    hyper_event_6 -> HyperEvent [label="Inheritance"];
+    hyper_event_7 -> HyperEvent [label="Inheritance"];
+    hyper_event_8 -> HyperEvent [label="Inheritance"];
+    hyper_event_9 -> HyperEvent [label="Inheritance"];
+    hyper_event_10 -> HyperEvent [label="Inheritance"];
+    hyper_event_11 -> HyperEvent [label="Inheritance"];
+
+    hyper_events [label="hyper_events\nList of HyperEvent" shape=plaintext];
+
+    hyper_events -> hyper_event_1 [label="Index 0"];
+    hyper_events -> hyper_event_2 [label="Index 1"];
+    hyper_events -> hyper_event_3 [label="Index 2"];
+    hyper_events -> hyper_event_4 [label="Index 3"];
+    hyper_events -> hyper_event_5 [label="Index 4"];
+    hyper_events -> hyper_event_6 [label="Index 5"];
+    hyper_events -> hyper_event_7 [label="Index 6"];
+    hyper_events -> hyper_event_8 [label="Index 7"];
+    hyper_events -> hyper_event_9 [label="Index 8"];
+    hyper_events -> hyper_event_10 [label="Index 9"];
+    hyper_events -> hyper_event_11 [label="Index 10"];
+
+    {
+        rank=same;
+        hyper_events;
+        MetaphysicalEntity;
+        HyperEvent;
+    }
+}

@@ -1,0 +1,24 @@
+digraph ProgramGraph {
+    node [shape=box];
+
+    class_Synchronizable [label="class Synchronizable"];
+    class_Prometheus [label="class Prometheus"];
+    class_ReverseArray [label="class ReverseArray"];
+    class_Amountable [label="class Amountable"];
+    class_MainProgram [label="class MainProgram"];
+    class_Thread [label="class Thread\n(Threading.Thread)"];
+
+    class_Synchronizable -> class_Thread [label="extends"];
+    class_Prometheus -> class_Thread [label="extends"];
+    class_ReverseArray -> class_Thread [label="extends"];
+    class_Amountable -> class_Thread [label="extends"];
+    class_MainProgram -> class_Thread [label="extends"];
+
+    class_MainProgram -> class_Synchronizable [label="uses"];
+    class_MainProgram -> class_ReverseArray [label="uses"];
+
+    class_Thread -> class_Synchronizable [label="has instance"];
+    class_Thread -> class_Prometheus [label="has instance"];
+    class_Thread -> class_ReverseArray [label="has instance"];
+    class_Thread -> class_Amountable [label="has instance"];
+}

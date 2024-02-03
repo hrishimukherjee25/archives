@@ -1,0 +1,140 @@
+digraph square_layout {
+    rankdir=LR;
+    
+    // Super Macroscopic Level
+    subgraph cluster_super_macroscopic_level {
+        label="1. Super Macroscopic Level";
+        color=lightblue;
+        style=dashed;
+
+        GlobalSystemDynamics;
+        EnvironmentalInfluences;
+        SocietalImpact;
+        HighLevelCharacteristics;
+    }
+
+    // Super Meso Level
+    subgraph cluster_super_meso_level {
+        label="2. Super Meso Level";
+        color=lightblue;
+        style=dashed;
+
+        EconomicSubsystem;
+        TechnologicalInfrastructure;
+        PoliticalStructures;
+        CulturalSocialInfluences;
+        InteractionsAmongGlobalSystems;
+    }
+
+    // Super Microscopic Level
+    subgraph cluster_super_microscopic_level {
+        label="3. Super Microscopic Level";
+        color=lightblue;
+        style=dashed;
+
+        EconomicSubsystemMarket;
+        EconomicSubsystemLabor;
+        TechnologicalInfrastructureInfo;
+        TechnologicalInfrastructureComm;
+        PoliticalStructuresGov;
+        PoliticalStructuresIntl;
+        SocialInfluencesCultural;
+        SocialInfluencesDemographic;
+        InteractionsLocalizedMicro;
+    }
+
+    // Super Molecular Level
+    subgraph cluster_super_molecular_level {
+        label="4. Super Molecular Level";
+        color=lightblue;
+        style=dashed;
+
+        MarketDynamicsSpecific;
+        InfoSystemsIndividual;
+        GovPoliciesSpecific;
+        CulturalNormsSpecific;
+        DemographicSpecific;
+        InteractionsMolecularComponents;
+    }
+
+    // Super Atomic Level
+    subgraph cluster_super_atomic_level {
+        label="5. Super Atomic Level";
+        color=lightblue;
+        style=dashed;
+
+        EconomicIndicatorsMetrics;
+        InfoSystemsSourceCode;
+        LegislativeTextsFrameworks;
+        CulturalPracticesTraditions;
+        GeneticBiologicalFactors;
+        IndividualInteractionsInfluence;
+    }
+
+    Phenomena [label="SuperScientificPhenomena", shape=box, style=bold];
+    validate [label="validate()", shape=ellipse];
+    
+    Circuit [label="QuantumCircuit", shape=box, style=bold];
+    fry [label="fry()", shape=ellipse, style=bold];
+    get_status [label="get_status()", shape=ellipse, style=bold];
+    
+    main [label="main()", shape=ellipse, color=green, style=bold];
+    super_reductionism_pyramid [label="super_reductionism_pyramid()", shape=ellipse, style=bold];
+    super_relativity [label="super_relativity()", shape=ellipse, style=bold];
+    super_string_theory [label="super_string_theory()", shape=ellipse, style=bold];
+    
+    scientific_phenomena_validate [label="Scientific Phenomena\n.validate()", shape=box, color=lightblue, style=bold];
+    quantum_circuit_fry [label="Quantum Circuit\n.fry()", shape=box, color=lightblue, style=bold];
+    quantum_circuit_get_status [label="Quantum Circuit\n.get_status()", shape=box, color=lightblue, style=bold];
+
+    // Connections
+    GlobalSystemDynamics -> EnvironmentalInfluences;
+    GlobalSystemDynamics -> SocietalImpact;
+    GlobalSystemDynamics -> HighLevelCharacteristics;
+
+    EconomicSubsystem -> TechnologicalInfrastructure;
+    EconomicSubsystem -> PoliticalStructures;
+    EconomicSubsystem -> CulturalSocialInfluences;
+    EconomicSubsystem -> InteractionsAmongGlobalSystems;
+
+    EconomicSubsystemMarket -> EconomicSubsystem;
+    EconomicSubsystemLabor -> EconomicSubsystem;
+    TechnologicalInfrastructureInfo -> TechnologicalInfrastructure;
+    TechnologicalInfrastructureComm -> TechnologicalInfrastructure;
+    PoliticalStructuresGov -> PoliticalStructures;
+    PoliticalStructuresIntl -> PoliticalStructures;
+    SocialInfluencesCultural -> CulturalSocialInfluences;
+    SocialInfluencesDemographic -> CulturalSocialInfluences;
+    InteractionsLocalizedMicro -> CulturalSocialInfluences;
+
+    MarketDynamicsSpecific -> EconomicSubsystemMarket;
+    InfoSystemsIndividual -> TechnologicalInfrastructureInfo;
+    GovPoliciesSpecific -> PoliticalStructuresGov;
+    CulturalNormsSpecific -> SocialInfluencesCultural;
+    DemographicSpecific -> SocialInfluencesDemographic;
+    InteractionsMolecularComponents -> InteractionsLocalizedMicro;
+
+    EconomicIndicatorsMetrics -> MarketDynamicsSpecific;
+    InfoSystemsSourceCode -> InfoSystemsIndividual;
+    LegislativeTextsFrameworks -> GovPoliciesSpecific;
+    CulturalPracticesTraditions -> CulturalNormsSpecific;
+    GeneticBiologicalFactors -> DemographicSpecific;
+    IndividualInteractionsInfluence -> IndividualInteractionsInfluence;
+
+    main -> super_reductionism_pyramid;
+    main -> super_relativity;
+    main -> super_string_theory;
+    main -> scientific_phenomena_validate [color=green];
+    main -> quantum_circuit_fry [color=green];
+
+    super_reductionism_pyramid -> Phenomena;
+    super_relativity -> Phenomena;
+    super_string_theory -> Phenomena;
+
+    scientific_phenomena_validate -> Phenomena;
+
+    quantum_circuit_fry -> Circuit;
+    quantum_circuit_get_status -> Circuit;
+    scientific_phenomena_validate -> validate [color=green];
+    quantum_circuit_get_status -> get_status [color=green];
+}

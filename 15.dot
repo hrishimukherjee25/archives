@@ -1,0 +1,17 @@
+digraph batman_program {
+    node [shape=box, style=rounded];
+    
+    DarkCity -> DarkVigilante -> GothamHeroes -> CityEvents;
+    
+    DarkCity [label="DarkCity\n(city_name, tormentors, demons)", shape=box];
+    DarkVigilante [label="DarkVigilante\n(name, chase_speed, sister, arch_nemesis)", shape=box];
+    GothamHeroes [label="GothamHeroes\n(hero_names)", shape=box];
+    CityEvents [label="CityEvents\n(event_name, participants)", shape=box];
+
+    gotham_city -> dark_knight -> heroes_assemble -> city_conversation;
+    
+    gotham_city [label="gotham_city\n(Gotham, predecessors of the Nineteenth Era, own demons)", shape=box];
+    dark_knight [label="dark_knight\n(Bruce Wayne, unprecedented, Clara, Joker)", shape=box];
+    heroes_assemble [label="heroes_assemble\n(['Batman', 'Robin', 'Catwoman', 'Gordon-Levitt'])", shape=box];
+    city_conversation [label="city_conversation\n('City Conversations', ['Christina', 'Anthony'])", shape=box];
+}

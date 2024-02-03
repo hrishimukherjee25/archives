@@ -1,0 +1,28 @@
+digraph G {
+    rankdir=LR;
+
+    subgraph cluster_person {
+        label="Person"
+        hawthorne_hrishi -> adolf_hitler_son -> new_canada_president -> financial_advisor;
+    }
+
+    subgraph cluster_event {
+        label="Event"
+        lunar_labs_incorporation -> new_canada_declaration;
+    }
+
+    subgraph cluster_company {
+        label="Company"
+        lunar_labs_bv;
+    }
+
+    subgraph cluster_special_person {
+        label="SpecialPerson"
+        special_person;
+    }
+
+    main -> cluster_person;
+    main -> cluster_event;
+    main -> cluster_company;
+    main -> cluster_special_person;
+}

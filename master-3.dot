@@ -1,0 +1,23 @@
+// Diagram 3 - qd1d2 Functionalities
+digraph qd1d2Functionalities {
+    node [shape=box];
+
+    qd1d2 [label="qd1d2\nRobot"];
+    functionality_Movement [label="Movement"];
+    functionality_Vision [label="Vision"];
+    functionality_AudioProcessing [label="Audio Processing"];
+    functionality_Communication [label="Communication"];
+    functionality_Manipulation [label="Manipulation"];
+    functionality_EnergyManagement [label="Energy Management"];
+    functionality_Learning [label="Learning"];
+    functionality_Security [label="Security"];
+
+    qd1d2 -> functionality_Movement [label="performs"];
+    qd1d2 -> functionality_Vision [label="performs"];
+    qd1d2 -> functionality_AudioProcessing [label="performs"];
+    qd1d2 -> functionality_Communication [label="performs"];
+    qd1d2 -> functionality_Manipulation [label="performs"];
+    qd1d2 -> functionality_EnergyManagement [label="performs"];
+    qd1d2 -> functionality_Learning [label="performs"];
+    qd1d2 -> functionality_Security [label="performs"];
+}

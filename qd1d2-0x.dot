@@ -1,0 +1,17 @@
+digraph FarFieldPattern {
+  node [shape=record, fontname="Arial"];
+
+  Antenna [label="{Mesh Reflector | Diameter: 2m | Mesh Type: XYZ | ...}" shape=box];
+
+  FarFieldPattern [label="{Far-Field Pattern | Frequency: 5 GHz | Polarization: Circular | ...}" shape=box];
+
+  SimulationTool [label="{Simulation Tool | Name: HFSS | Version: 2023 | ...}" shape=box];
+
+  Antenna -> FarFieldPattern [label="Generates"];
+  SimulationTool -> Antenna [label="Simulates"];
+  SimulationTool -> FarFieldPattern [label="Computes"];
+
+  ResultPlot [label="{Result Plot | Visualization: 3D | ...}" shape=box];
+
+  FarFieldPattern -> ResultPlot [label="Visualizes"];
+}

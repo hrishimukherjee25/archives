@@ -1,0 +1,201 @@
+C D E F G A B A G 
+E D C D E F G F E
+
+C E G A B A G F E 
+D C E G A B C D E
+
+C G E A B D E C G 
+A E C B D E F G C 
+
+C D E G C D E G A 
+A G E D C E D C B A G F 
+G A B D C B A G F E D C
+
+C E G A B C D E 
+F D B A G E D C 
+G E C D E G F A
+
+C E G A B C D E 
+F D B A G E D C 
+G E C D E G F A 
+
+C D E G A B C D 
+E D C B A G F E 
+
+C D E F G A B C 
+E D C B A G F E 
+G A B C D E F G 
+F E D C B A G F 
+
+C D E F G A B C 
+E D C B A G F E 
+G A B C D E F G 
+F E D C B A G F 
+
+C D E F G A B C 
+E D C B A G F E 
+G A B C D E F G 
+F E D C B A G F
+
+C D E F G A B C 
+E D C B A G F E 
+G A B C D E F G 
+F E D C B A G F
+
+ C D E F G A B C | 
+| E D C B A G F E | 
+| G A B C D E F G | 
+| F E D C B A G F |
+
+[Verse 1] 
+| Cm Bb Ab G G7 | 
+| Fm G7 Cm G7 Cm | 
+[Chorus] 
+| C E7 Am D7 | 
+| G7 C G7 C | 
+[Verse 2] 
+| Cm Bb Ab G G7 | 
+| Fm G7 Cm G7 Cm | 
+[Bridge] 
+| F Fm C G7 | 
+| F Fm C G7 | 
+[Chorus] 
+| C E7 Am D7 | 
+| G7 C G7 C | 
+[Outro] 
+| Cm Bb Ab G G7 | 
+| Fm G7 Cm G7 Cm |
+
+[Verse] 
+| Am Dm E Am | 
+| Am Dm G E7 | 
+[Chorus] 
+| Am Dm G E7 | 
+| Am Dm E Am | 
+[Bridge] 
+| F E7 Am G | 
+| F E7 Am G | 
+[Outro] 
+| Am Dm E Am | 
+| Am Dm G E7 | 
+
+[Verse] 
+| Am G C E7 | 
+| Am G Dm E | 
+| Am G C E7 | 
+| Am G Dm E | 
+[Chorus] 
+| F C G E7 | 
+| F C G E7 | 
+[Bridge] 
+| Am G Dm E | 
+| Am G C E7 | 
+| F C G E7 | 
+| F C G E7 | 
+[Outro] 
+| Am G C E7 | 
+| Am G Dm E | 
+| Am G C E7 | 
+| Am G Dm E | 
+
+[Verse] 
+| Am G C E7 | 
+| Am G Dm E | 
+| Am G C E7 | 
+| Am G Dm E | 
+[Chorus] 
+| F C G E7 | 
+| F C G E7 | 
+[Bridge] 
+| Am G Dm E | 
+| Am G C E7 | 
+| F C G E7 | 
+| F C G E7 | 
+[Outro] 
+| Am G C E7 | 
+| Am G Dm E | 
+| Am G C E7 | 
+| Am G Dm E | 
+
+[Verse] 
+| Dm G C Am | 
+| Dm G C Am | 
+[Chorus] 
+| F Am G Em | 
+| F Am G Em | 
+[Bridge] 
+| Dm G Am C | 
+| Dm G Am C | 
+[Outro] 
+| F Am G Em | 
+| F Am G Em | 
+
+[Verse] 
+| Em C | G D | 
+| Em C | G D | 
+
+| Am F | C G | 
+| Am F | C G |
+
+| Em C | G D | 
+| Em C | G D | 
+
+| Am G | Em D | 
+| Am G | Em D |
+
+| Dm G | C Am | 
+| Dm G | C Am |
+
+| Am G | C Em | 
+| Am G | C Em |
+
+[Verse] 
+| Em Cmaj7 | G D | Em Cmaj7 
+| G D |
+
+[Verse] 
+| Am G | D Em | Am G | D 
+Em |
+
+[Verse] 
+| Cmaj7 Am7 | Fmaj7 G | Cmaj7 
+Am7 | Fmaj7 G |
+
+| Em Cmaj7 | G D/F# | Em 
+Cmaj7 | G D/F# |
+
+[Verse] 
+| C G Am F | C G Am F |
+
+[Verse] 
+| Am G F E | Am G F E |
+
+[Verse] 
+| Dm G C Em | Am F G Dm |
+
+
+[Verse] 
+| Am Dm G C | Am Dm E E |
+
+[Verse] 
+| Em Bm C G | Em Bm Am D 
+|
+
+[Verse] 
+| G D Em C | G D Am C |
+
+[Verse] 
+| Am C G D | Am C G D |
+
+| Am C G D | Am C G D | 
+| Em C G D | Em C G D |
+
+[VERSE]
+| C G AM F 
+| 
+| EM DM G 
+G7 |
+| C G AM F 
+| 
+| EM DM G 
+G7 |

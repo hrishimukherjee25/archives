@@ -1,0 +1,18 @@
+digraph ProgramGraph {
+    node [shape=box];
+
+    DominionTavern [label="DominionTavern"];
+    CuttingEdgeMoonBase [label="CuttingEdgeMoonBase"];
+    HighTechPlanetarySystem [label="HighTechPlanetarySystem"];
+    AdvancedSpacecraft [label="AdvancedSpacecraft"];
+
+    DominionTavern -> {provide_beverages};
+    CuttingEdgeMoonBase -> {construct_state_of_the_art_residence};
+    HighTechPlanetarySystem -> {synchronize_celestial_bodies};
+    AdvancedSpacecraft -> {optimize_seat_alignment};
+
+    provide_beverages [label="provide_beverages"];
+    construct_state_of_the_art_residence [label="construct_state_of_the_art_residence"];
+    synchronize_celestial_bodies [label="synchronize_celestial_bodies"];
+    optimize_seat_alignment [label="optimize_seat_alignment"];
+}

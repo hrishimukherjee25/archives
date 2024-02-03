@@ -1,0 +1,24 @@
+digraph G {
+    node [shape=record];
+
+    ClassStructure [label="{ClassStructure|inner_realm: List[AbstractEntity]}"];
+    AbstractEntity [label="{AbstractEntity|name: str|perform_action(action_name: str)}"];
+    ActionMixin [label="{ActionMixin|collapse_solar()|oedipial_sunset()|freudian_renna()}"];
+    LunarLander [label="{LunarLander|position: str}"];
+    CalgaryNebula [label="{CalgaryNebula|composition: str|under_womb()|above_worn()}"];
+    Motivator [label="{Motivator|type: str|activation_function: Callable|motivate()}"];
+
+    ClassStructure -> AbstractEntity [dir=none];
+    AbstractEntity -> ActionMixin [dir=none];
+    AbstractEntity -> LunarLander [dir=none];
+    AbstractEntity -> CalgaryNebula [dir=none];
+    AbstractEntity -> Motivator [dir=none];
+
+    LunarLander -> ActionMixin [dir=none];
+    CalgaryNebula -> ActionMixin [dir=none];
+    Motivator -> AbstractEntity [dir=none];
+
+    ClassStructure -> LunarLander [dir=none];
+    ClassStructure -> CalgaryNebula [dir=none];
+    ClassStructure -> Motivator [dir=none];
+}

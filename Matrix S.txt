@@ -1,0 +1,14 @@
+Matrix S:
+
+|        | Power Unit | Mobility System | Vision System | Audio System | Communication System | Manipulation System | Learning System | Security System | Signal Analysis | Touch Screen |
+|--------|------------|-----------------|---------------|--------------|-----------------------|----------------------|------------------|-----------------|------------------|--------------|
+| Power Unit              | 1          | 0               | 0             | 0            | 0                     | 0                    | 0                | 0               | 0                | 0            |
+| Mobility System         | 0          | 1               | 1             | 1            | 0                     | 1                    | 0                | 0               | 0                | 1            |
+| Vision System           | 0          | 1               | 1             | 1            | 0                     | 1                    | 1                | 0               | 0                | 0            |
+| Audio System            | 0          | 1               | 1             | 1            | 0                     | 1                    | 1                | 0               | 0                | 0            |
+| Communication System    | 0          | 0               | 0             | 0            | 1                     | 0                    | 1                | 1               | 1                | 1            |
+| Manipulation System     | 0          | 1               | 1             | 1            | 0                     | 1                    | 0                | 0               | 0                | 1            |
+| Learning System         | 0          | 0               | 1             | 1            | 1                     | 0                    | 1                | 0               | 0                | 0            |
+| Security System         | 0          | 0               | 0             | 0            | 1                     | 0                    | 0                | 1               | 0                | 0            |
+| Signal Analysis         | 0          | 0               | 0             | 0            | 1                     | 0                    | 0                | 0               | 1                | 0            |
+| Touch Screen            | 0          | 1               | 0             | 0            | 1                     | 1                    | 0                | 0               | 0                | 1            |

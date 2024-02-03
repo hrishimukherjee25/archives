@@ -1,0 +1,49 @@
+digraph Limb {
+    node [shape=plaintext];
+
+    struct_limb [
+        label = <<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD PORT="inflection_point">inflection_point</TD>
+                <TD PORT="relativistic_theories">relativistic_theories</TD>
+                <TD PORT="global_function_mv">global_function_mv</TD>
+                <TD PORT="circuit_status">circuit_status</TD>
+                <TD PORT="hello_moto_signal">hello_moto_signal</TD>
+                <TD PORT="jedi_base">jedi_base</TD>
+                <TD PORT="exploration">exploration</TD>
+                <TD PORT="links_presidency">links_presidency</TD>
+                <TD PORT="on_human">on_human</TD>
+                <TD PORT="mars_station">mars_station</TD>
+                <TD PORT="dark_knight_execution">dark_knight_execution</TD>
+                <TD PORT="hildr_approval">hildr_approval</TD>
+                <TD PORT="heroic_return">heroic_return</TD>
+                <TD PORT="farewell">farewell</TD>
+                <TD PORT="tether_ware">tether_ware</TD>
+                <TD PORT="heroic_journey">heroic_journey</TD>
+                <TD PORT="sweet_moments">sweet_moments</TD>
+                <TD PORT="point_accumulation">point_accumulation</TD>
+                <TD PORT="permutation_correction">permutation_correction</TD>
+            </TR>
+        </TABLE>>
+    ];
+
+    inflection_point -> struct_limb:inflection_point;
+    relativistic_theories -> struct_limb:relativistic_theories;
+    global_function_mv -> struct_limb:global_function_mv;
+    circuit_status -> struct_limb:circuit_status;
+    hello_moto_signal -> struct_limb:hello_moto_signal;
+    jedi_base -> struct_limb:jedi_base;
+    exploration -> struct_limb:exploration;
+    links_presidency -> struct_limb:links_presidency;
+    on_human -> struct_limb:on_human;
+    mars_station -> struct_limb:mars_station;
+    dark_knight_execution -> struct_limb:dark_knight_execution;
+    hildr_approval -> struct_limb:hildr_approval;
+    heroic_return -> struct_limb:heroic_return;
+    farewell -> struct_limb:farewell;
+    tether_ware -> struct_limb:tether_ware;
+    heroic_journey -> struct_limb:heroic_journey;
+    sweet_moments -> struct_limb:sweet_moments;
+    point_accumulation -> struct_limb:point_accumulation;
+    permutation_correction -> struct_limb:permutation_correction;
+}

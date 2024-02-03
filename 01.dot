@@ -1,0 +1,36 @@
+digraph CodeGraph {
+  "initial_phrase" [label="initial_phrase"];
+  "inner_expression" [label="inner_expression"];
+  "parameters" [label="parameters"];
+  "multiple_phrases" [label="multiple_phrases"];
+  "sql_parse" [label="sql_parse"];
+  "inch_on_phrases" [label="inch_on_phrases"];
+  "hildr_likes_lockheed" [label="hildr_likes_lockheed"];
+  "multiple_phrases_with_brackets" [label="multiple_phrases_with_brackets"];
+  "end_go_on_expression" [label="end_go_on_expression"];
+  "gol_expression" [label="gol_expression"];
+  "jester_phrases" [label="jester_phrases"];
+  "renaissance_expression" [label="renaissance_expression"];
+  "for_loop_expression" [label="for_loop_expression"];
+  "knight_fudge_phrases" [label="knight_fudge_phrases"];
+  "point_expression" [label="point_expression"];
+  "complete_statement" [label="complete_statement"];
+  "main" [label="main"];
+
+  "complete_statement" -> "initial_phrase";
+  "complete_statement" -> "inner_expression";
+  "complete_statement" -> "parameters";
+  "complete_statement" -> "multiple_phrases";
+  "complete_statement" -> "sql_parse";
+  "complete_statement" -> "inch_on_phrases";
+  "complete_statement" -> "hildr_likes_lockheed";
+  "complete_statement" -> "multiple_phrases_with_brackets";
+  "complete_statement" -> "end_go_on_expression";
+  "complete_statement" -> "gol_expression";
+  "complete_statement" -> "jester_phrases";
+  "complete_statement" -> "renaissance_expression";
+  "complete_statement" -> "for_loop_expression";
+  "complete_statement" -> "knight_fudge_phrases";
+  "complete_statement" -> "point_expression";
+  "main" -> "complete_statement";
+}

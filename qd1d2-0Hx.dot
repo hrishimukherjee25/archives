@@ -1,0 +1,37 @@
+digraph qd1d2System {
+  node [shape=record, fontname="Arial"];
+
+  // ... (Previous components of qd1d2)
+
+  Dataset [label="{Dataset | Features, Labels}" shape=box];
+
+  DecisionTree1 [label="{Decision Tree 1 | Depth: 5 | ...}" shape=box];
+  DecisionTree2 [label="{Decision Tree 2 | Depth: 7 | ...}" shape=box];
+  DecisionTree3 [label="{Decision Tree 3 | Depth: 3 | ...}" shape=box];
+
+  Ensemble [label="{Ensemble | Combining Mechanism: Voting | ...}" shape=box];
+
+  GeneticAlgorithm [label="{Genetic Algorithm | Population Size: 100 | Generations: 50 | ...}" shape=box];
+
+  EvolutionaryEnsembleModel [label="{Evolutionary Ensemble Model | Base Models: Decision Trees | Ensemble: Voting | Optimization: Genetic Algorithm | ...}" shape=box];
+
+  // ... (Connect qd1d2 components)
+
+  Dataset -> DecisionTree1;
+  Dataset -> DecisionTree2;
+  Dataset -> DecisionTree3;
+
+  DecisionTree1 -> Ensemble;
+  DecisionTree2 -> Ensemble;
+  DecisionTree3 -> Ensemble;
+
+  Ensemble -> EvolutionaryEnsembleModel;
+
+  GeneticAlgorithm -> EvolutionaryEnsembleModel;
+
+  Result [label="{Result | Predictions}" shape=box];
+
+  EvolutionaryEnsembleModel -> Result;
+
+  // ... (Connect qd1d2 components to Evolutionary Ensemble Model)
+}

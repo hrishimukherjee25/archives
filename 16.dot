@@ -1,0 +1,17 @@
+# Enhanced DAAssistant Class Diagram
+
+digraph DAAssistantDiagram {
+    // Node Definitions
+    node [shape=record, fontname="Arial", fontsize=12];
+
+    class_ClockStatus [label="{ ClockStatus | - status : str | + display_status() }"];
+    class_DAAssistant [label="{ DAAssistant | - constable_name : str | - clock_status : ClockStatus | - brotherly_status : ClockStatus | - clara_status : str | - remarks : str | + display_status() }"];
+
+    // Relationships
+    class_DAAssistant -> class_ClockStatus [label="clock_status", arrowhead="odot"];
+    class_DAAssistant -> class_ClockStatus [label="brotherly_status", arrowhead="odot"];
+
+    // Node Styling
+    edge [fontname="Arial", fontsize=10];
+    class_ClockStatus [style=dashed];
+}

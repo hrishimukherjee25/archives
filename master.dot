@@ -1,0 +1,19 @@
+// Diagram 1 - Matrix S
+digraph MatrixS {
+    node [shape=record];
+
+    struct_MatrixS [label="{MatrixS|+ rows: int|+ cols: int|+ elements: List[List[float]]}"];
+    method_get_rows [label="{get_rows()|+ returns: int}", shape=record];
+    method_get_cols [label="{get_cols()|+ returns: int}", shape=record];
+    method_get_elements [label="{get_elements()|+ returns: List[List[float]]}", shape=record];
+    method_transpose [label="{transpose()|+ returns: MatrixS}", shape=record];
+    method_multiply [label="{multiply(matrix: MatrixS)|+ returns: MatrixS}", shape=record];
+    method_add [label="{add(matrix: MatrixS)|+ returns: MatrixS}", shape=record];
+
+    struct_MatrixS -> method_get_rows [label="uses"];
+    struct_MatrixS -> method_get_cols [label="uses"];
+    struct_MatrixS -> method_get_elements [label="uses"];
+    struct_MatrixS -> method_transpose [label="uses"];
+    struct_MatrixS -> method_multiply [label="uses"];
+    struct_MatrixS -> method_add [label="uses"];
+}

@@ -1,0 +1,139 @@
++-----------------------------------+------------------------+-----------------------------+
+| Category                          | Diagrams                | Purpose                     |
++-----------------------------------+------------------------+-----------------------------+
+| Object-Oriented Programming (OOP) | ProgramGraph           | Class relationships         |
+|                                   | G                      | Class and inheritance       |
+|                                   | DAAssistantDiagram     | Class relationship         |
+|                                   | batman_program         | Object relationships        |
+|                                   | ContractOfferDiagram    | Class and main relationship |
+|                                   | BuilderRoyalty         | Class relationships         |
+|                                   | G                      | Entity relationships        |
+|                                   | G                      | Entity and inheritance      |
+|                                   | Program10              | Object relationships        |
+| Scientific Phenomena               | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+| CodeGraph                         | G                      | Code flow and dependencies  |
++-----------------------------------+------------------------+-----------------------------+
+
++-----------------------------------+------------------------+-----------------------------+
+| Category                          | Diagrams                | Purpose                     |
++-----------------------------------+------------------------+-----------------------------+
+| Software Design Patterns          | G                      | Chain of Responsibility    |
+|                                   | G                      | Decorator                  |
+|                                   | G                      | Builder                    |
+|                                   | G                      | Adapter                    |
+| Physics and Events                | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Software Engineering              | G                      | Class relationships        |
+|                                   | G                      | Class and main relationship |
+|                                   | G                      | Object relationships       |
+|                                   | G                      | Entity relationships       |
+|                                   | G                      | Entity and inheritance     |
+| Matrix Operations                 | G                      | Matrix operations          |
+| Natural Language Processing (NLP)  | G                      | Sentence and word permutations |
+|                                   | G                      | Sentence and word combinations |
+| System Architecture               | G                      | Component relationships    |
+|                                   | G                      | System components          |
+| Astrophysics and Metaphysics       | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Program Flowchart                 | G                      | Code flow and dependencies  |
++-----------------------------------+------------------------+-----------------------------+
+
++-----------------------------------+------------------------+-----------------------------+
+| Category                          | Diagrams                | Purpose                     |
++-----------------------------------+------------------------+-----------------------------+
+| Space and Celestial Bodies         | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Program Operations                | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Quantum Computing                 | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+| City Infrastructure               | G                      | Function relationships     |
+| Dark City                         | G                      | Object relationships       |
+| Permutation and Combination        | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Entity Relationships               | G                      | Entity and inheritance     |
+| Code Flowchart                    | G                      | Code flow and dependencies  |
+| Special Persons                   | G                      | Entity relationships       |
+|                                   | G                      | Entity and inheritance     |
++-----------------------------------+------------------------+-----------------------------+
+
++-----------------------------------+------------------------+-----------------------------+
+| Category                          | Diagrams                | Purpose                     |
++-----------------------------------+------------------------+-----------------------------+
+| Programming Concepts              | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+| Scientific Events                 | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Software Development              | G                      | Function relationships     |
+|                                   | G                      | Object relationships       |
+| City Development                  | G                      | Function relationships     |
+| Artificial Intelligence (AI)      | G                      | Class relationships        |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Parallel Programming              | G                      | Class and main relationship |
+|                                   | G                      | Object relationships       |
+| Science and Metaphysics           | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Program Structure                 | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Matrix Operations                 | G                      | Matrix operations          |
++-----------------------------------+------------------------+-----------------------------+
+
++-----------------------------------+------------------------+-----------------------------+
+| Category                          | Diagrams                | Purpose                     |
++-----------------------------------+------------------------+-----------------------------+
+| Space and Celestial Bodies         | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Program Operations                | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Quantum Computing                 | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+| City Infrastructure               | G                      | Function relationships     |
+| Dark City                         | G                      | Object relationships       |
+| Permutation and Combination        | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Entity Relationships               | G                      | Entity and inheritance     |
+| Code Flowchart                    | G                      | Code flow and dependencies  |
+| Special Persons                   | G                      | Entity relationships       |
+|                                   | G                      | Entity and inheritance     |
+| Programming Concepts              | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+|                                   | G                      | Inheritance and methods     |
+| Scientific Events                 | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Software Development              | G                      | Function relationships     |
+|                                   | G                      | Object relationships       |
+| City Development                  | G                      | Function relationships     |
+| Artificial Intelligence (AI)      | G                      | Class relationships        |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Parallel Programming              | G                      | Class and main relationship |
+|                                   | G                      | Object relationships       |
+| Science and Metaphysics           | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+|                                   | G                      | Inheritance                |
+| Program Structure                 | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+|                                   | G                      | Function relationships     |
+| Matrix Operations                 | G                      | Matrix operations          |
++-----------------------------------+------------------------+-----------------------------+
+
+

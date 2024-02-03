@@ -1,0 +1,57 @@
+digraph G {
+    rankdir=LR;
+
+    class BuilderRoyalty {
+        _builder_state
+        _royalty_state
+    }
+
+    class Entity {
+    }
+
+    class Legend {
+        _symbols
+    }
+
+    class ImplicativeArray {
+        _array_name
+        _elements
+    }
+
+    class City {
+        _name
+        _cleanliness
+    }
+
+    class LanguageKnowledge {
+        _language
+        _knowledge
+    }
+
+    class Person {
+        _name
+        _knowledge
+    }
+
+    class EnhancedBuilderRoyalty {
+        _bonus_state
+    }
+
+    main [shape=box, label="main()"]
+
+    main -> BuilderRoyalty [label="builder_royalty.describe()"]
+    main -> Legend [label="legend.describe()"]
+    main -> ImplicativeArray [label="implicative_array.describe()"]
+    main -> City [label="city.describe()"]
+    main -> LanguageKnowledge [label="french_knowledge.describe()"]
+    main -> Person [label="person.describe()"]
+    main -> EnhancedBuilderRoyalty [label="builder_royalty.describe()"]
+
+    BuilderRoyalty -> Entity
+    Legend -> Entity
+    ImplicativeArray -> Entity
+    City -> Entity
+    LanguageKnowledge -> Entity
+    Person -> Entity
+    EnhancedBuilderRoyalty -> Entity
+}

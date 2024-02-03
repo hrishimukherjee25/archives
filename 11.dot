@@ -1,0 +1,18 @@
+digraph G {
+    rankdir=LR;
+
+    Person [shape=record, label="{ Person | _name | _title | _location }"];
+    Event [shape=record, label="{ Event | _date | _description }"];
+    Company [shape=record, label="{ Company | _name | _objective }"];
+    SpecialPerson [shape=record, label="{ SpecialPerson | _name | _title | _location | _special_attribute }"];
+
+    Person -> Event [label="Inherits"];
+    SpecialPerson -> Person [label="Inherits"];
+    Person -> Person [label="Association"];
+    Event -> Event [label="Association"];
+    Company -> Company [label="Association"];
+
+    Person -> Company [label="Association"];
+    Event -> Company [label="Association"];
+    SpecialPerson -> Company [label="Association"];
+}

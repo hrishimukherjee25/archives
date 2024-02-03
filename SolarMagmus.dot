@@ -1,0 +1,66 @@
+digraph G {
+    rankdir=TB;
+
+    class Collection {
+        collectible
+    }
+
+    class Func {
+        method
+        mantle
+        ceta
+        hover
+        float
+    }
+
+    class MagmusSolar {
+        solar_magmus
+        nebula
+        at_flat_organism
+    }
+
+    class Anatomy {
+        grey_neuro
+    }
+
+    class Tensor {
+        white_mass
+    }
+
+    class Palm {
+        feet_sweat
+    }
+
+    class Wormhole {
+        multi
+    }
+
+    class BoundaryThirdMega {
+        mess_man
+        water_substance
+    }
+
+    AOE_M_Alien_Starcraft [label="AOE_M_Alien_Starcraft"]
+
+    Func -> Collection
+    Func -> Anatomy
+    Func -> Tensor
+    Func -> Palm
+    Func -> Wormhole
+    Func -> BoundaryThirdMega
+
+    Collection -> Nonna_flat
+    Collection -> energy_stream
+
+    MagmusSolar -> at_flat_organism
+
+    Anatomy -> water_boundary
+
+    Tensor -> linearize_3d_to_2d_flat_ocean_chest_flush
+
+    Palm -> trapezoid_ce_ef_ce_ef
+
+    Wormhole -> hole_spread_dictation
+
+    BoundaryThirdMega -> water_boundary
+}

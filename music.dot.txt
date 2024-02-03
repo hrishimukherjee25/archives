@@ -1,0 +1,41 @@
+digraph G {
+  "In the shadows of the crust, where mysteries unfold" -> "Embraced by the echoes, secrets to be told."
+  "Embraced by the echoes, secrets to be told." -> "Casting light upon the surface, in the realm of the deep,"
+  "Casting light upon the surface, in the realm of the deep," -> "A dance of Em and C, where ancient whispers sleep."
+  
+  "A dance of Em and C, where ancient whispers sleep." -> Chorus
+  Chorus -> "Ceta in the ocean, a melody in the waves,"
+  "Ceta in the ocean, a melody in the waves," -> "Amidst the ebb and flow, a symphony engraves."
+  "Amidst the ebb and flow, a symphony engraves." -> "Hovering near and far, like spirits in the mist,"
+  "Hovering near and far, like spirits in the mist," -> "Emotional tides, a dance of the heart's twist."
+  
+  "Emotional tides, a dance of the heart's twist." -> Verse2
+  Verse2 -> "Floating at the surface, where dreams take flight,"
+  "Floating at the surface, where dreams take flight," -> "Am and G, in the soft moonlight."
+  "Am and G, in the soft moonlight." -> "Boundary of water, a frontier to explore,"
+  "Boundary of water, a frontier to explore," -> "Dm and G, tales of the seafloor."
+  
+  "Dm and G, tales of the seafloor." -> Chorus
+  Chorus -> "Nebula so clear, in the cosmic expanse,"
+  "Nebula so clear, in the cosmic expanse," -> "Am and G, a celestial dance."
+  "Am and G, a celestial dance." -> "At flat organism, life's canvas unfurls,"
+  "At flat organism, life's canvas unfurls," -> "Cmaj7 and Am7, painting vibrant swirls."
+  
+  "Cmaj7 and Am7, painting vibrant swirls." -> Chorus
+  Chorus -> "Palms and feet in sweet surrender,"
+  "Palms and feet in sweet surrender," -> "Am and G, a moment to remember."
+  "Am and G, a moment to remember." -> "Multi-verse dictation, whispers in the air,"
+  "Multi-verse dictation, whispers in the air," -> "Dm and G, a cosmic affair."
+  
+  "Dm and G, a cosmic affair." -> Verse4
+  Verse4 -> "Third Mega Mess Man in the trap,"
+  "Third Mega Mess Man in the trap," -> "Am and Dm, where echoes overlap."
+  "Am and Dm, where echoes overlap." -> "Boundary third mega mess man,"
+  "Boundary third mega mess man," -> "Em and Bm, in the celestial span."
+  
+  "Em and Bm, in the celestial span." -> Outro
+  Outro -> "Boundary third mega water substance,"
+  "Boundary third mega water substance," -> "G and D, a cosmic dance."
+  "G and D, a cosmic dance." -> "Grab, grasp, and then grasp again,"
+  "Grab, grasp, and then grasp again," -> "Am and C, the cosmic refrain."
+}

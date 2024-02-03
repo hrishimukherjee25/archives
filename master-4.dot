@@ -1,0 +1,23 @@
+// Diagram 4 - qd1d2 Physical Components
+digraph qd1d2PhysicalComponents {
+    node [shape=box];
+
+    qd1d2 [label="qd1d2\nRobot"];
+    component_PowerUnit [label="Power Unit"];
+    component_MobilitySystem [label="Mobility System"];
+    component_VisionSystem [label="Vision System"];
+    component_AudioSystem [label="Audio System"];
+    component_CommunicationSystem [label="Communication System"];
+    component_ManipulationSystem [label="Manipulation System"];
+    component_LearningSystem [label="Learning System"];
+    component_SecuritySystem [label="Security System"];
+
+    qd1d2 -> component_PowerUnit [label="includes"];
+    qd1d2 -> component_MobilitySystem [label="includes"];
+    qd1d2 -> component_VisionSystem [label="includes"];
+    qd1d2 -> component_AudioSystem [label="includes"];
+    qd1d2 -> component_CommunicationSystem [label="includes"];
+    qd1d2 -> component_ManipulationSystem [label="includes"];
+    qd1d2 -> component_LearningSystem [label="includes"];
+    qd1d2 -> component_SecuritySystem [label="includes"];
+}

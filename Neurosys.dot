@@ -1,0 +1,36 @@
+digraph RustCode {
+    node [shape=record, fontname="Courier New"];
+
+    ClassStructure [label="{ClassStructure|inner_realm: Vec<Box<dyn Debug>>|outer_function: Option<Box<dyn Fn()>>}"];
+    LunarLander [label="{LunarLander|position: String}"];
+    CalgaryNebula [label="{CalgaryNebula|composition: String}"];
+    Motivator [label="{Motivator|motivator_type: String}"];
+    JediBase [label="{JediBase}"];
+    Uncharted [label="{Uncharted}"];
+
+    ClassStructure -> LunarLander [label="inner_realm"];
+    ClassStructure -> CalgaryNebula [label="inner_realm"];
+    ClassStructure -> Motivator [label="outer_function"];
+    LunarLander -> Motivator [label="motivate"];
+    LunarLander -> CalgaryNebula [label="under_womb, above_worn"];
+    JediBase -> Uncharted [label="send_signal_to_moon, sell"];
+    Uncharted -> Motivator [label="sh"];
+
+    // Additional actions
+    lunar_lander [label="{LunarLander|position: String}"];
+    calgary_nebula [label="{CalgaryNebula|composition: String}"];
+    motivator [label="{Motivator|motivator_type: String}"];
+    jedi_base [label="{JediBase}"];
+    uncharted [label="{Uncharted}"];
+
+    class_structure [label="{ClassStructure|inner_realm: Vec<Box<dyn Debug>>|outer_function: Option<Box<dyn Fn()>>}"];
+    class_structure -> lunar_lander [label="add_to_inner_realm"];
+    class_structure -> calgary_nebula [label="add_to_inner_realm"];
+    class_structure -> motivator [label="set_outer_function"];
+    class_structure -> class_structure [label="display_structure"];
+    lunar_lander -> lunar_lander [label="collapse_solar, oedipial_sunset, freudian_renna"];
+    calgary_nebula -> calgary_nebula [label="under_womb, above_worn"];
+    motivator -> motivator [label="motivate"];
+    jedi_base -> jedi_base [label="send_signal_to_moon, sell"];
+    uncharted -> uncharted [label="thank_you, sh"];
+}

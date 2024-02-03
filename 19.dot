@@ -1,0 +1,25 @@
+digraph G {
+    node [shape=record];
+
+    class ComplexWindowOfOpportunity {
+        frame: str;
+        reference: str;
+        recursive: str;
+
+        ComplexWindowOfOpportunity
+        show_opportunity
+        recursive_function
+        cached_recursive_function
+    }
+
+    class chainable_method {
+        wrapper
+    }
+
+    ComplexWindowOfOpportunity -> chainable_method [label="show_opportunity"];
+    ComplexWindowOfOpportunity -> chainable_method [label="recursive_function"];
+    ComplexWindowOfOpportunity -> chainable_method [label="cached_recursive_function"];
+
+    ComplexWindowOfOpportunity [label="{ComplexWindowOfOpportunity|frame: str|reference: str|recursive: str}"];
+    chainable_method [label="{chainable_method|wrapper(self, *args, **kwargs): object}"];
+}
