@@ -1,0 +1,28 @@
+# Given values
+age_of_earth = 4.54e9  # 4.54 billion years
+computed_result = 24220187.5
+
+# Division
+result = age_of_earth / computed_result
+
+# Display the result
+print(f"The division of the age of Earth by the computed result is: {result}")
+
+The division of the age of Earth by the computed result is: 187.44693863331983
+
+To compare the two fractions \( \frac{1}{187} \) and \( \frac{3}{217} \), we can find a common denominator and then compare the numerators:
+
+1. Find a common denominator:
+   - The common denominator for 187 and 217 is the product of the two numbers, which is 40579.
+
+2. Convert the fractions to have the common denominator:
+   - \( \frac{1}{187} \) becomes \( \frac{40579}{40579} \cdot \frac{1}{187} = \frac{40579}{187 \times 40579} \).
+   - \( \frac{3}{217} \) becomes \( \frac{40579}{40579} \cdot \frac{3}{217} = \frac{40579 \times 3}{187 \times 40579} \).
+
+Now, compare the numerators:
+- \( \frac{1}{187} \) has a numerator of 1.
+- \( \frac{3}{217} \) has a numerator of \( 40579 \times 3 \).
+
+Since \( 40579 \times 3 \) is greater than 1, \( \frac{3}{217} \) is greater than \( \frac{1}{187} \).
+
+Therefore, \( \frac{3}{217} > \frac{1}{187} \).

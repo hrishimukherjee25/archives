@@ -1,0 +1,26 @@
+import numpy as np
+
+# Define a simple neural network class
+class NeuralNetwork:
+    def __init__(self, input_size, output_size):
+        self.weights = np.random.randn(input_size, output_size)
+        self.bias = np.zeros((1, output_size))
+
+    def forward(self, inputs):
+        return np.dot(inputs, self.weights) + self.bias
+
+# Example usage
+input_size = 10
+output_size = 1
+
+# Create an instance of the neural network
+agi_model = NeuralNetwork(input_size, output_size)
+
+# Provide input data
+input_data = np.random.randn(1, input_size)
+
+# Make a prediction using the AGI model
+prediction = agi_model.forward(input_data)
+
+# Print the prediction
+print("AGI Model Prediction:", prediction)
