@@ -1,0 +1,20 @@
+digraph discussion_process {
+  node [shape=box, style=rounded];
+  
+  start [label="User initiates discussion"];
+  model [label="ChatGPT (GPT-3.5)"];
+  agi [label="Artificial General Intelligence (AGI)"];
+  narrow_ai [label="Narrow AI Systems"];
+  learn [label="Learn and Adapt"];
+  communicate [label="Understand and Communicate"];
+  research [label="Ongoing Research and Development"];
+  
+  start -> model [label="User input"];
+  model -> narrow_ai [label="Respond with language understanding"];
+  narrow_ai -> learn [label="Specialized learning in specific tasks"];
+  narrow_ai -> communicate [label="Communication in predefined domains"];
+  learn -> model [label="Apply learning to generate responses"];
+  communicate -> model [label="Generate human-like text responses"];
+  model -> research [label="Provide information about AGI development"];
+  research -> agi [label="AGI development"];
+}

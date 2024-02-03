@@ -1,0 +1,17 @@
+digraph LunarTransportation {
+  // Nodes
+  node [shape=box];
+  Moon;
+  Earth;
+  Spacecraft;
+  OrbitalInfrastructure;
+  AdvancedPropulsion;
+  EconomicModels;
+
+  // Relationships
+  Moon -> Spacecraft;
+  Earth -> Spacecraft;
+  Spacecraft -> OrbitalInfrastructure;
+  Spacecraft -> AdvancedPropulsion;
+  Spacecraft -> EconomicModels;
+}

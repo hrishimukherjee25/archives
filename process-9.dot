@@ -1,0 +1,55 @@
+digraph G {
+  rankdir=LR; // Left to right layout
+  
+  subgraph cluster_0 {
+    label = "The Moon's Structure";
+    
+    // Nodes
+    Crust [shape=box, style=rounded, label="Lunar Crust"];
+    Mantle [shape=box, style=rounded, label="Lunar Mantle"];
+    Core [shape=box, style=rounded, label="Lunar Core"];
+    
+    // Edges
+    Crust -> Mantle;
+    Mantle -> Core;
+  }
+
+  // Information about Crust
+  subgraph cluster_1 {
+    label = "Lunar Crust";
+    
+    // Nodes
+    Regolith [shape=box, style=rounded, label="Moon Regolith"];
+    Anorthosite [shape=box, style=rounded, label="Anorthosite"];
+    
+    // Edges
+    Regolith -> Anorthosite [label="Primarily composed of"];
+  }
+  
+  // Information about Mantle
+  subgraph cluster_2 {
+    label = "Lunar Mantle";
+    
+    // Nodes
+    Olivine [shape=box, style=rounded, label="Olivine"];
+    Pyroxene [shape=box, style=rounded, label="Pyroxene"];
+    
+    // Edges
+    Olivine -> Pyroxene [label="Main components"];
+  }
+
+  // Information about Core
+  subgraph cluster_3 {
+    label = "Lunar Core";
+    
+    // Nodes
+    Iron [shape=box, style=rounded, label="Iron"];
+    Sulfur [shape=box, style=rounded, label="Sulfur"];
+    Nickel [shape=box, style=rounded, label="Nickel"];
+    
+    // Edges
+    Iron -> Core [label="Component of"];
+    Sulfur -> Core [label="Component of"];
+    Nickel -> Core [label="Component of"];
+  }
+}

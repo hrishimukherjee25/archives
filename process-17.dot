@@ -1,0 +1,35 @@
+digraph ReplicantReplicationProcess {
+    node [shape=box, style=rounded]
+    
+    subgraph cluster_init {
+        label="1. Initialization Phase"
+        init [label="Replicant enters replication chamber"]
+    }
+    
+    subgraph cluster_assembly {
+        label="2. Assembly Phase"
+        load_program [label="Load Program"]
+        load_materials [label="Load Materials"]
+        assemble [label="Assemble Nanobot"]
+    }
+    
+    subgraph cluster_replication {
+        label="3. Replication Phase"
+        replicate [label="Nanobot Replication"]
+        integrate [label="Integration of Components"]
+    }
+    
+    subgraph cluster_completion {
+        label="4. Completion Phase"
+        verify [label="Verification and Testing"]
+        emerge [label="New Replicant Emerges"]
+    }
+    
+    init -> load_program
+    load_program -> load_materials
+    load_materials -> assemble
+    assemble -> replicate
+    replicate -> integrate
+    integrate -> verify
+    verify -> emerge
+}

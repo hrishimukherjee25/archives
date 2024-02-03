@@ -1,0 +1,48 @@
+digraph G {
+    rankdir=LR;
+
+    subgraph cluster_0 {
+        label = "User";
+        style = "rounded";
+
+        start [label="User starts conversation" shape=ellipse];
+        amazon_search [label="User asks about Civil War series on Amazon"];
+        book_series [label="User mentions it's a book series"];
+        genesis_equation [label="User asks about the Genesis Equation"];
+        book_by_hrishi [label="User mentions a book by Sir Hrishi Mukherjee"];
+        amazon_available [label="User states it's available on Amazon"];
+        equation_interpretation [label="User provides a complex equation"];
+        evolution_rate [label="User asks to apply the rate of evolution"];
+        integrate_evolution [label="User requests integration of the rate of evolution"];
+        equation_genesis [label="User presents the first equation of Genesis"];
+        biblical_context [label="User relates it to the Biblical sense"];
+
+        start -> amazon_search -> book_series -> genesis_equation -> book_by_hrishi -> amazon_available -> equation_interpretation;
+        equation_interpretation -> evolution_rate -> integrate_evolution -> equation_genesis -> biblical_context;
+    }
+
+    subgraph cluster_1 {
+        label = "Assistant";
+        style = "rounded";
+
+        response1 [label="Assistant provides information on the Civil War series"];
+        response2 [label="Assistant explains the Genesis Equation"];
+        response3 [label="Assistant confirms the book by Sir Hrishi Mukherjee"];
+        response4 [label="Assistant mentions the availability on Amazon"];
+        response5 [label="Assistant interprets the complex equation"];
+        response6 [label="Assistant discusses the rate of evolution"];
+        response7 [label="Assistant integrates the rate of evolution into the equation"];
+        response8 [label="Assistant presents the first equation of Genesis"];
+        response9 [label="Assistant discusses the Biblical context"];
+
+        amazon_search -> response1;
+        genesis_equation -> response2;
+        book_by_hrishi -> response3;
+        amazon_available -> response4;
+        equation_interpretation -> response5;
+        evolution_rate -> response6;
+        integrate_evolution -> response7;
+        equation_genesis -> response8;
+        biblical_context -> response9;
+    }
+}

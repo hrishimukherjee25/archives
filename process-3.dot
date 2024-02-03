@@ -1,0 +1,54 @@
+digraph G {
+    node [shape=box];
+
+    Start [label="Start"];
+    Section1 [label="Split the code using /inflect"];
+    RateOfEvolution1 [label="Calculate rate of evolution"];
+    Section2 [label="Create linear function using rate of evolution"];
+    Section3 [label="Create quadratic function using rate of evolution"];
+    Section4 [label="Calculate derivatives"];
+    Section5 [label="Create trigonometric function using rate of evolution"];
+    MinMax [label="Calculate min and max"];
+    Frequency [label="Calculate frequency"];
+    RelevanceToPopulation [label="Explain relevance to a population"];
+    ToThePowerOf3 [label="Create to the power of 3 function using rate of evolution"];
+    CubicFunction [label="Create cubic function using rate of evolution"];
+    ComplexFunction [label="Make it more complex"];
+    Holes [label="Find holes in the function"];
+    FirstDerivative [label="Calculate first derivative"];
+    SecondDerivative [label="Calculate second derivative"];
+    ThirdDerivative [label="Calculate third derivative"];
+    RelevanceToContext [label="Explain relevance to the initial context"];
+    Section6 [label="Split code and calculate rate of evolution"];
+    CreateCubicFunction [label="Create cubic function using provided values"];
+    FirstDerivativeCubic [label="Find first derivative"];
+    SecondDerivativeCubic [label="Find second derivative"];
+    ChartCubic [label="Chart the cubic function"];
+    AdditionalActions [label="Additional actions"];
+    End [label="End"];
+
+    Start -> Section1;
+    Section1 -> RateOfEvolution1;
+    RateOfEvolution1 -> Section2;
+    Section2 -> Section3;
+    Section3 -> Section4;
+    Section4 -> Section5;
+    Section5 -> MinMax;
+    MinMax -> Frequency;
+    Frequency -> RelevanceToPopulation;
+    RelevanceToPopulation -> ToThePowerOf3;
+    ToThePowerOf3 -> CubicFunction;
+    CubicFunction -> ComplexFunction;
+    ComplexFunction -> Holes;
+    Holes -> FirstDerivative;
+    FirstDerivative -> SecondDerivative;
+    SecondDerivative -> ThirdDerivative;
+    ThirdDerivative -> RelevanceToContext;
+    RelevanceToContext -> Section6;
+    Section6 -> CreateCubicFunction;
+    CreateCubicFunction -> FirstDerivativeCubic;
+    FirstDerivativeCubic -> SecondDerivativeCubic;
+    SecondDerivativeCubic -> ChartCubic;
+    ChartCubic -> AdditionalActions;
+    AdditionalActions -> End;
+}

@@ -1,0 +1,38 @@
+digraph IonDriveDevelopment {
+  rankdir=LR; // Left to Right orientation
+
+  // Nodes
+  node [shape=box]; // Set node shape to box
+
+  Basics -> Physics;
+  Physics -> Components;
+  Components -> {IonizationSource AccelerationSystem PropellantStorage ThrustChamber};
+  Components -> Propellant;
+  IonizationSystem -> {Design Build};
+  AccelerationSystem -> {Design Build};
+  ThrustChamber -> {Design Build};
+  PowerSupply;
+  Testing -> {SmallScaleTests Optimization};
+  Safety;
+
+  // Subgraphs
+  subgraph cluster_0 {
+    label = "Development Process";
+    Basics -> Testing;
+  }
+  
+  subgraph cluster_1 {
+    label = "Ionization System";
+    Design -> Build;
+  }
+  
+  subgraph cluster_2 {
+    label = "Acceleration System";
+    Design -> Build;
+  }
+
+  subgraph cluster_3 {
+    label = "Thrust Chamber";
+    Design -> Build;
+  }
+}

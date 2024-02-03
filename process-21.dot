@@ -1,0 +1,14 @@
+digraph Discussion_Process {
+    node [shape=box, style=rounded];
+    
+    Start [label="Start Discussion"];
+    Extract_Info [label="Extract Information"];
+    Create_Document [label="Create Document"];
+    End [label="End"];
+
+    Start -> Extract_Info [label="Discuss American Civil War"];
+    Extract_Info -> Create_Document [label="Extract relevant information"];
+    Create_Document -> End [label="Generate document"];
+
+    {rank=same; Extract_Info; Create_Document;}
+}

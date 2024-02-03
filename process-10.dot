@@ -1,0 +1,36 @@
+digraph LanguageProcessing {
+    // Compiler steps
+    subgraph cluster_compiler {
+        label="Compiler"
+        
+        start [label="Start"]
+        tokenize [label="Tokenize"]
+        parse [label="Parse"]
+        optimize [label="Optimize"]
+        generate_code [label="Generate Code"]
+        end [label="End"]
+
+        start -> tokenize
+        tokenize -> parse
+        parse -> optimize
+        optimize -> generate_code
+        generate_code -> end
+    }
+
+    // Interpreter steps
+    subgraph cluster_interpreter {
+        label="Interpreter"
+        
+        start [label="Start"]
+        tokenize [label="Tokenize"]
+        interpret [label="Interpret"]
+        end [label="End"]
+
+        start -> tokenize
+        tokenize -> interpret
+        interpret -> end
+    }
+
+    // Connection between Compiler and Interpreter
+    tokenize -> tokenize [label="Common Tokenization"]
+}

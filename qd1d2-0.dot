@@ -1,0 +1,55 @@
+digraph qd1d2 {
+    rankdir=LR;
+
+    // Existing components
+    subgraph cluster_super_scientific_phenomena {
+        label="SuperScientificPhenomena";
+        color=lightblue;
+
+        Phenomena [label="SuperScientificPhenomena", shape=box];
+        validate [label="validate()", shape=ellipse];
+    }
+
+    subgraph cluster_quantum_circuit {
+        label="QuantumCircuit";
+        color=lightblue;
+
+        Circuit [label="QuantumCircuit", shape=box];
+        fry [label="fry()", shape=ellipse];
+        get_status [label="get_status()", shape=ellipse];
+    }
+
+    main [label="main()", shape=ellipse, color=green];
+    super_reductionism_pyramid [label="super_reductionism_pyramid()", shape=ellipse];
+    super_relativity [label="super_relativity()", shape=ellipse];
+    super_string_theory [label="super_string_theory()", shape=ellipse];
+
+    scientific_phenomena_validate [label="Scientific Phenomena\n.validate()", shape=box, color=lightblue];
+    quantum_circuit_fry [label="Quantum Circuit\n.fry()", shape=box, color=lightblue];
+    quantum_circuit_get_status [label="Quantum Circuit\n.get_status()", shape=box, color=lightblue];
+
+    main -> super_reductionism_pyramid;
+    main -> super_relativity;
+    main -> super_string_theory;
+    main -> scientific_phenomena_validate [color=green];
+    main -> quantum_circuit_fry [color=green];
+
+    super_reductionism_pyramid -> Phenomena;
+    super_relativity -> Phenomena;
+    super_string_theory -> Phenomena;
+
+    scientific_phenomena_validate -> Phenomena;
+
+    quantum_circuit_fry -> Circuit;
+    quantum_circuit_get_status -> Circuit;
+    scientific_phenomena_validate -> validate [color=green];
+    quantum_circuit_get_status -> get_status [color=green];
+
+    // Incorporate the provided sequence
+    e -> f -> imm -> ce -> cf -> cp -> mantle -> ceta -> ceta -> hover -> float -> boundary_water -> transitionary_limit -> water_boundary -> magmus -> solar -> flat_organism -> neuro -> mass -> sweat_NxN -> multi -> man -> substance -> Settlement -> Pong_to_Earth -> Convergent_Point_NxNxNxN_coeff
+
+    Pyramid1 -> Pyramid2 -> imm -> e -> f -> f_inv -> no_p -> R -> EOS -> POS -> plus1 -> minus1 -> e_eq_mc2 -> prev_tdidf -> eigen -> hover -> float -> neuro -> mass -> multi -> man -> substance -> settlement -> su_u_bst_p_d_o -> substance_settlement_residue_abandoned -> man_multi_mass_neuro_float_hover_var_theta_eigen -> er -> plus1 -> minus1 -> fdidt_tendon -> prev2_cm_eq_e -> minus01_plus01 -> SOP -> SOE -> p_on_1_minus_f_f -> e_eq_mmi2 -> dimaryP1 -> dimaryP2 -> Wisdom_Tooth -> Right_Wing -> Left_Palm -> Scratch -> Right_Shoulder -> SBTRpan -> fofofocBTR_us_cu_sc_us_sound_barrier_sim_theory_match
+
+    Convergent_Point_NxNxNxN_coeff -> end
+    SBTRpan -> end
+}

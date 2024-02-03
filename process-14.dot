@@ -1,0 +1,23 @@
+digraph CountryRecognitionProcess {
+    node [shape=box];
+
+    DeclareIndependence -> RecognitionByOtherCountries
+    RecognitionByOtherCountries -> InternationalOrganizations
+    RecognitionByOtherCountries -> TerritorialControl
+    TerritorialControl -> DiplomacyAndTreaties
+    InternationalOrganizations -> MembershipInUN
+    DiplomacyAndTreaties -> HistoricalPrecedents
+
+    DeclareIndependence [label="Declare Independence"]
+    RecognitionByOtherCountries [label="Recognition by Other Countries"]
+    InternationalOrganizations [label="Recognition by International Organizations"]
+    TerritorialControl [label="Territorial Control"]
+    DiplomacyAndTreaties [label="Diplomacy and Treaties"]
+    MembershipInUN [label="Membership in International Organizations (e.g., UN)"]
+    HistoricalPrecedents [label="Consideration of Historical Precedents"]
+
+    DeclareIndependence -> TerritorialControl [label="Effective Control"]
+    RecognitionByOtherCountries -> DiplomacyAndTreaties [label="Diplomatic Relations"]
+    RecognitionByOtherCountries -> InternationalOrganizations [label="Support for Recognition"]
+    InternationalOrganizations -> MembershipInUN [label="Membership Process"]
+}

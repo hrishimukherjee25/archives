@@ -1,0 +1,13 @@
+digraph TeleportationProcess {
+  // Nodes
+  node [shape=rectangle, style=filled, color=lightblue];
+  Calibrate [label="Calibrate Teleporter"];
+  SetDestination [label="Set Destination Coordinates"];
+  EnableOverride [label="Enable Manual Override"];
+  TeleportationSequence [label="Initiate Teleportation Sequence"];
+  StateTransitions [label="Perform State Transitions"];
+  DisplayFinalState [label="Display Final State"];
+
+  // Edges
+  Calibrate -> SetDestination -> EnableOverride -> TeleportationSequence -> StateTransitions -> DisplayFinalState;
+}

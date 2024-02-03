@@ -1,0 +1,23 @@
+digraph MathematicalExpression {
+    node [shape=box, style=rounded];
+    
+    // Nodes
+    subgraph cluster_root {
+        label="1. Square Root Function";
+        sqrt [label="sqrt"];
+    }
+
+    subgraph cluster_inside {
+        label="2. Inside the Square Root";
+        inside [label="{EOS - P_{OS} + 1 + (1 - e) * mc^2_{prev} - tdidf = 1 - | + 11re <= eigen(theta - var)}"];
+    }
+
+    subgraph cluster_multiplication {
+        label="3. Multiplication by R";
+        R [label="R"];
+    }
+
+    // Edges
+    sqrt -> inside;
+    inside -> R;
+}

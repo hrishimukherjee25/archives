@@ -1,0 +1,17 @@
+digraph Process {
+  start [label="Start", shape="ellipse"]
+  
+  // Sequence 1
+  e -> f -> imm -> ce -> cf -> cp -> mantle -> ceta -> ceta -> hover -> float -> boundary_water -> transitionary_limit -> water_boundary -> magmus -> solar -> flat_organism -> neuro -> mass -> sweat_NxN -> multi -> man -> substance -> Settlement -> Pong_to_Earth -> Convergent_Point_NxNxNxN_coeff
+  
+  // Sequence 2
+  Pyramid1 -> Pyramid2 -> imm -> e -> f -> f_inv -> no_p -> R -> EOS -> POS -> plus1 -> minus1 -> e_eq_mc2 -> prev_tdidf -> eigen -> hover -> float -> neuro -> mass -> multi -> man -> substance -> settlement -> su_u_bst_p_d_o -> substance_settlement_residue_abandoned -> man_multi_mass_neuro_float_hover_var_theta_eigen -> er -> plus1 -> minus1 -> fdidt_tendon -> prev2_cm_eq_e -> minus01_plus01 -> SOP -> SOE -> p_on_1_minus_f_f -> e_eq_mmi2 -> dimaryP1 -> dimaryP2 -> Wisdom_Tooth -> Right_Wing -> Left_Palm -> Scratch -> Right_Shoulder -> SBTRpan -> fofofocBTR_us_cu_sc_us_sound_barrier_sim_theory_match
+  
+  // End node
+  end [label="End", shape="ellipse"]
+  
+  // Connect nodes
+  start -> e
+  Convergent_Point_NxNxNxN_coeff -> end
+  SBTRpan -> end
+}

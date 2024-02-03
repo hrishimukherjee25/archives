@@ -1,0 +1,178 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ClickableDotMatrixUI extends JFrame {
+
+    private static final int DOT_SIZE = 30;
+    private static final int MATRIX_SIZE = 5; // Adjust this to change the matrix size
+    private static final int WINDOW_SIZE = 500;
+
+    private final List<Dot> dots = new ArrayList<>();
+
+    public ClickableDotMatrixUI() {
+        setTitle("Clickable Dot Matrix UI");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(WINDOW_SIZE, WINDOW_SIZE);
+        setLocationRelativeTo(null);
+
+        JPanel matrixPanel = new DotMatrixPanel();
+        add(matrixPanel);
+
+        setVisible(true);
+    }
+
+    private class Dot {
+        int x, y;
+        boolean clicked;
+        String filePath;
+
+        Dot(int x, int y, String filePath) {
+            this.x = x;
+            this.y = y;
+            this.clicked = false;
+            this.filePath = filePath;
+        }
+    }
+
+    private class DotMatrixPanel extends JPanel {
+
+        public DotMatrixPanel() {
+            initializeDots();
+            addMouseListener(new DotClickListener());
+        }
+
+        private void initializeDots() {
+            String[] filePaths = {
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+                    "C:\\Users\\hrish\\OneDrive\\Desktop\\process-diagrams-from-the-start\\qd1d2-0.dot",
+            };
+
+            if (filePaths.length != MATRIX_SIZE * MATRIX_SIZE) {
+                throw new RuntimeException("Invalid size of filePaths array");
+            }
+
+            int count = 0;
+            for (int i = 0; i < MATRIX_SIZE; i++) {
+                for (int j = 0; j < MATRIX_SIZE; j++) {
+                    int x = j * DOT_SIZE;
+                    int y = i * DOT_SIZE;
+                    dots.add(new Dot(x, y, filePaths[count++]));
+                }
+            }
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+
+            // Draw grid lines
+            g.setColor(Color.BLACK);
+            for (int i = 0; i <= MATRIX_SIZE; i++) {
+                g.drawLine(0, i * DOT_SIZE, MATRIX_SIZE * DOT_SIZE, i * DOT_SIZE);
+                g.drawLine(i * DOT_SIZE, 0, i * DOT_SIZE, MATRIX_SIZE * DOT_SIZE);
+            }
+
+            // Draw dots
+            g.setColor(Color.BLUE);
+            g.setFont(new Font("Arial", Font.PLAIN, 20));
+            for (Dot dot : dots) {
+                if (dot.clicked) {
+                    g.setColor(Color.RED);
+                } else {
+                    g.setColor(Color.BLUE);
+                }
+                g.drawString(".", dot.x + DOT_SIZE / 2 - 5, dot.y + DOT_SIZE / 2 + 5);
+            }
+        }
+    }
+
+    private class DotClickListener extends MouseAdapter {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            int mouseX = e.getX();
+            int mouseY = e.getY();
+
+            for (Dot dot : dots) {
+                if (mouseX >= dot.x && mouseX <= dot.x + DOT_SIZE &&
+                        mouseY >= dot.y && mouseY <= dot.y + DOT_SIZE) {
+                    dot.clicked = true;
+
+                    // Open the file associated with the clicked dot
+                    openFile(dot.filePath);
+
+                    // Open a new window to analyze the clicked dot
+                    SwingUtilities.invokeLater(() -> analyzeDot(dot));
+                }
+            }
+
+            repaint();
+        }
+
+        private void openFile(String filePath) {
+            try {
+                Desktop.getDesktop().open(new java.io.File(filePath));
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        private void analyzeDot(Dot dot) {
+            JFrame analysisFrame = new JFrame("Dot Analysis");
+            analysisFrame.setSize(300, 200);
+            analysisFrame.setLocationRelativeTo(null);
+
+            JPanel analysisPanel = new JPanel(new BorderLayout());
+
+            JTextArea textArea = new JTextArea();
+            textArea.setEditable(false);
+
+            try {
+                String fileContent = Files.readString(Path.of(dot.filePath));
+                textArea.setText(fileContent);
+            } catch (IOException e) {
+                e.printStackTrace();
+                textArea.setText("Error reading file");
+            }
+
+            JScrollPane scrollPane = new JScrollPane(textArea);
+            analysisPanel.add(scrollPane, BorderLayout.CENTER);
+
+            analysisFrame.add(analysisPanel);
+            analysisFrame.setVisible(true);
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(ClickableDotMatrixUI::new);
+    }
+}

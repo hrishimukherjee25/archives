@@ -1,0 +1,49 @@
+digraph Process {
+    node [shape=box, style=rounded];
+    rankdir=LR;
+    
+    subgraph cluster_0 {
+        label = "Genesis Equation Computation";
+        style = "rounded, dashed";
+
+        Genesis_Equation -> Values -> Computation -> Result;
+    }
+
+    subgraph cluster_1 {
+        label = "Fraction Computation";
+        style = "rounded, dashed";
+
+        Fraction_One -> Computation_Methodologies -> Fraction_One_Computation;
+        Fraction_Two -> Solar_System_Knowledge -> Fraction_Two_Computation;
+        Fraction_One_Computation -> Ratio_One;
+        Fraction_Two_Computation -> Ratio_Two;
+    }
+
+    subgraph cluster_2 {
+        label = "Comparison";
+        style = "rounded, dashed";
+
+        Ratio_One -> Common_Denominator -> Comparison -> Comparison_Result;
+        Ratio_Two -> Common_Denominator -> Comparison;
+    }
+
+    Genesis_Equation [label="Genesis Equation"];
+    Values [label="Values"];
+    Computation [label="Computation"];
+    Result [label="Result"];
+
+    Fraction_One [label="Fraction One (\( \frac{1}{187} \))"];
+    Fraction_Two [label="Fraction Two (\( \frac{3}{217} \))"];
+    Computation_Methodologies [label="Computational\nMethodologies"];
+    Solar_System_Knowledge [label="Solar System\nKnowledge"];
+    Fraction_One_Computation [label="Computation"];
+    Fraction_Two_Computation [label="Computation"];
+    Ratio_One [label="Ratio One (\( \frac{1}{187} \))"];
+    Ratio_Two [label="Ratio Two (\( \frac{3}{217} \))"];
+    Common_Denominator [label="Find Common Denominator"];
+    Comparison [label="Comparison"];
+    Comparison_Result [label="Comparison Result"];
+
+    Genesis_Equation -> Fraction_One;
+    Genesis_Equation -> Fraction_Two;
+}

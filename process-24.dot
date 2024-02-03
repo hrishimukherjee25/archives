@@ -1,0 +1,14 @@
+digraph G {
+    node [shape=box, style=rounded, fontsize=12];
+
+    "Python Code" [label="Original Python Code"];
+    "Improved Python Code" [label="Improved Python Code"];
+    "DOT File" [label="DOT File"];
+    "Discussion Process" [label="Discussion Process"];
+
+    "Python Code" -> "Improved Python Code" [label="Enhanced/Complexified"];
+    "Improved Python Code" -> "DOT File" [label="Conversion"];
+    "Discussion Process" -> "DOT File" [label="Representation"];
+
+    {rank=same; "Python Code"; "Improved Python Code";}
+}

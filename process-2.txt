@@ -1,0 +1,48 @@
+digraph QuantumAdventure {
+    node [shape=box, style=rounded, color=black, fontname="Arial"];
+    edge [color=black, fontname="Arial"];
+
+    Start [label="Start", shape=circle, color=blue];
+
+    spread_dictation [label="Spread Dictation"];
+    quantum_tunneling [label="Quantum Tunneling"];
+    quantum_entanglement_fireworks [label="Quantum Entanglement Fireworks"];
+    quantum_carnival [label="Quantum Carnival"];
+    quantum_fizzle [label="Quantum Fizzle"];
+    energetic_quantum_fluctuations [label="Energetic Quantum Fluctuations"];
+    quantum_superposition [label="Quantum Superposition"];
+    quantum_entanglement_superposition [label="Quantum Entanglement in Superposition"];
+    quantum_teleportation [label="Quantum Teleportation"];
+    quantum_entanglement_communication [label="Quantum Entanglement Communication"];
+
+    ContactHypothesis [label="Contact Hypothesis"];
+
+    success [label="Success", shape=doublecircle, color=green];
+    failure [label="Failure", shape=doublecircle, color=red];
+
+    Start -> spread_dictation;
+
+    spread_dictation -> ContactHypothesis;
+
+    ContactHypothesis -> {
+        quantum_tunneling,
+        quantum_entanglement_fireworks,
+        quantum_carnival,
+        quantum_fizzle,
+        energetic_quantum_fluctuations,
+        quantum_superposition,
+        quantum_entanglement_superposition,
+        quantum_teleportation,
+        quantum_entanglement_communication
+    };
+
+    quantum_tunneling -> success;
+    quantum_entanglement_fireworks -> success;
+    quantum_carnival -> success;
+    quantum_fizzle -> failure;
+    energetic_quantum_fluctuations -> quantum_superposition;
+    quantum_superposition -> quantum_entanglement_superposition;
+    quantum_entanglement_superposition -> quantum_teleportation;
+    quantum_teleportation -> success;
+    quantum_entanglement_communication -> success;
+}

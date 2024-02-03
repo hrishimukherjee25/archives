@@ -1,0 +1,12 @@
+digraph discussion_process {
+  rankdir=LR;
+  node [shape=box];
+
+  "Define Problem" -> "Research" -> "Identify Reasons" -> "List Factors" -> "Highlight Key Issues" -> "Discuss Solutions" -> "Agree on Approach" -> "Implement";
+
+  "Research" -> "Update Knowledge";
+  "Identify Reasons" -> "Political Instability", "Houthi Insurgency", "Regional Power Struggle", "Humanitarian Crisis", "Economic Challenges";
+  "Discuss Solutions" -> "Peaceful Resolution", "Address Humanitarian Crisis", "International Cooperation";
+
+  "Implement" -> "Stay Informed";
+}

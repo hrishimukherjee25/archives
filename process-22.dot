@@ -1,0 +1,16 @@
+digraph Process {
+    // Define nodes
+    node [shape=rectangle];
+
+    Start [label="Start"];
+    UserInput [label="User inputs graph data"];
+    CalculateButton [label="User clicks 'Calculate PageRank' button"];
+    PageRankCalculation [label="PageRank values are calculated"];
+    DisplayResult [label="Result is displayed"];
+
+    // Define edges
+    Start -> UserInput [label="Start process"];
+    UserInput -> CalculateButton [label="Provide graph data"];
+    CalculateButton -> PageRankCalculation [label="Click"];
+    PageRankCalculation -> DisplayResult [label="Result calculated"];
+}

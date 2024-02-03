@@ -1,0 +1,20 @@
+digraph SpaceProcess {
+    // Nodes
+    node [shape=box, style=rounded];
+    DockingStation [label="Geostationary\nOrbital\nDocking\nStation"];
+    Replicants [label="Self-Manufactured\nReplicants"];
+    Spacecraft [label="Traveling\nSpacecraft"];
+    Resources [label="Space Resources\nUtilization"];
+    AutonomousSystems [label="Autonomous\nSystems & AI"];
+    EnvironmentalConsiderations [label="Environmental\nConsiderations"];
+    Collaboration [label="International\nCollaboration &\nRegulations"];
+
+    // Relationships
+    DockingStation -> Replicants [label="Replication"];
+    Replicants -> Spacecraft [label="Maintenance,\nRepair, &\nTasks"];
+    Resources -> Replicants [label="Material\nUtilization"];
+    Spacecraft -> DockingStation [label="Travel"];
+    AutonomousSystems -> Replicants [label="Control &\nDecision-Making"];
+    EnvironmentalConsiderations -> DockingStation [label="Maintenance"];
+    Collaboration -> DockingStation [label="Regulations &\nCoordination"];
+}

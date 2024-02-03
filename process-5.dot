@@ -1,0 +1,13 @@
+digraph Process {
+    start [label="User: Ask about Airplane Turbulence"]
+    turbulence [label="Assistant: Provide Explanation"]
+
+    turbulence -> astronaut_question [label="User: Ask about Astronaut Percentage"]
+    astronaut_question -> astronaut_info [label="Assistant: Provide Information"]
+
+    astronaut_info -> ceo_question [label="User: Ask about CEO Percentage"]
+    ceo_question -> ceo_estimate [label="Assistant: Provide Rough Estimate"]
+
+    ceo_estimate -> exact_number_question [label="User: Request for an Exact Number"]
+    exact_number_question -> limitations [label="Assistant: Explain Limitations and Recommend Sources"]
+}

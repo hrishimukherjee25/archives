@@ -1,0 +1,64 @@
+digraph qd1d2 {
+    // Nodes
+    node [shape=plaintext];
+
+    // Matrix shape
+    matrix_shape [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="A1"> </TD><TD PORT="A2"> </TD><TD PORT="A3"> </TD><TD PORT="A4"> </TD><TD PORT="A5"> </TD><TD PORT="A6"> </TD><TD PORT="A7"> </TD><TD PORT="A8"> </TD><TD PORT="A9"> </TD></TR>
+    <TR><TD PORT="B1"> </TD><TD PORT="B2"> </TD><TD PORT="B3"> </TD><TD PORT="B4"> </TD><TD PORT="B5"> </TD><TD PORT="B6"> </TD><TD PORT="B7"> </TD><TD PORT="B8"> </TD><TD PORT="B9"> </TD></TR>
+    <TR><TD PORT="C1"> </TD><TD PORT="C2"> </TD><TD PORT="C3"> </TD><TD PORT="C4"> </TD><TD PORT="C5"> </TD><TD PORT="C6"> </TD><TD PORT="C7"> </TD><TD PORT="C8"> </TD><TD PORT="C9"> </TD></TR>
+    <TR><TD PORT="D1"> </TD><TD PORT="D2"> </TD><TD PORT="D3"> </TD><TD PORT="D4"> </TD><TD PORT="D5"> </TD><TD PORT="D6"> </TD><TD PORT="D7"> </TD><TD PORT="D8"> </TD><TD PORT="D9"> </TD></TR>
+    <TR><TD PORT="E1"> </TD><TD PORT="E2"> </TD><TD PORT="E3"> </TD><TD PORT="E4"> </TD><TD PORT="E5"> </TD><TD PORT="E6"> </TD><TD PORT="E7"> </TD><TD PORT="E8"> </TD><TD PORT="E9"> </TD></TR>
+    <TR><TD PORT="F1"> </TD><TD PORT="F2"> </TD><TD PORT="F3"> </TD><TD PORT="F4"> </TD><TD PORT="F5"> </TD><TD PORT="F6"> </TD><TD PORT="F7"> </TD><TD PORT="F8"> </TD><TD PORT="F9"> </TD></TR>
+    <TR><TD PORT="G1"> </TD><TD PORT="G2"> </TD><TD PORT="G3"> </TD><TD PORT="G4"> </TD><TD PORT="G5"> </TD><TD PORT="G6"> </TD><TD PORT="G7"> </TD><TD PORT="G8"> </TD><TD PORT="G9"> </TD></TR>
+    <TR><TD PORT="H1"> </TD><TD PORT="H2"> </TD><TD PORT="H3"> </TD><TD PORT="H4"> </TD><TD PORT="H5"> </TD><TD PORT="H6"> </TD><TD PORT="H7"> </TD><TD PORT="H8"> </TD><TD PORT="H9"> </TD></TR>
+    <TR><TD PORT="I1"> </TD><TD PORT="I2"> </TD><TD PORT="I3"> </TD><TD PORT="I4"> </TD><TD PORT="I5"> </TD><TD PORT="I6"> </TD><TD PORT="I7"> </TD><TD PORT="I8"> </TD><TD PORT="I9"> </TD></TR>
+    </TABLE>>];
+
+    // Connect matrix nodes
+    matrix_shape:A1 -> matrix_shape:A2 -> matrix_shape:A3 -> matrix_shape:A4 -> matrix_shape:A5 -> matrix_shape:A6 -> matrix_shape:A7 -> matrix_shape:A8 -> matrix_shape:A9 -> matrix_shape:B9 -> matrix_shape:C9 -> matrix_shape:D9 -> matrix_shape:E9 -> matrix_shape:F9 -> matrix_shape:G9 -> matrix_shape:H9 -> matrix_shape:I9 -> matrix_shape:I8 -> matrix_shape:I7 -> matrix_shape:I6 -> matrix_shape:I5 -> matrix_shape:I4 -> matrix_shape:I3 -> matrix_shape:I2 -> matrix_shape:I1 -> matrix_shape:H1 -> matrix_shape:G1 -> matrix_shape:F1 -> matrix_shape:E1 -> matrix_shape:D1 -> matrix_shape:C1 -> matrix_shape:B1 -> matrix_shape:B2 -> matrix_shape:B3 -> matrix_shape:B4 -> matrix_shape:B5 -> matrix_shape:B6 -> matrix_shape:B7 -> matrix_shape:B8 -> matrix_shape:C8 -> matrix_shape:D8 -> matrix_shape:E8 -> matrix_shape:F8 -> matrix_shape:G8 -> matrix_shape:H8 -> matrix_shape:I8 -> matrix_shape:I7 -> matrix_shape:I6 -> matrix_shape:I5 -> matrix_shape:I4 -> matrix_shape:I3 -> matrix_shape:I2 -> matrix_shape:I1 -> matrix_shape:H1 -> matrix_shape:G1 -> matrix_shape:F1 -> matrix_shape:E1 -> matrix_shape:D1 -> matrix_shape:C1 -> matrix_shape:B1 -> matrix_shape:A1;
+
+    // qd1d2 elements
+    subgraph cluster_super_scientific_phenomena {
+        label="SuperScientificPhenomena";
+        color=lightblue;
+
+        Phenomena [label="SuperScientificPhenomena", shape=box];
+        validate [label="validate()", shape=ellipse];
+    }
+
+    subgraph cluster_quantum_circuit {
+        label="QuantumCircuit";
+        color=lightblue;
+
+        Circuit [label="QuantumCircuit", shape=box];
+        fry [label="fry()", shape=ellipse];
+        get_status [label="get_status()", shape=ellipse];
+    }
+
+    main [label="main()", shape=ellipse, color=green];
+    super_reductionism_pyramid [label="super_reductionism_pyramid()", shape=ellipse];
+    super_relativity [label="super_relativity()", shape=ellipse];
+    super_string_theory [label="super_string_theory()", shape=ellipse];
+
+    scientific_phenomena_validate [label="Scientific Phenomena\n.validate()", shape=box, color=lightblue];
+    quantum_circuit_fry [label="Quantum Circuit\n.fry()", shape=box, color=lightblue];
+    quantum_circuit_get_status [label="Quantum Circuit\n.get_status()", shape=box, color=lightblue];
+
+    main -> super_reductionism_pyramid;
+    main -> super_relativity;
+    main -> super_string_theory;
+    main -> scientific_phenomena_validate [color=green];
+    main -> quantum_circuit_fry [color=green];
+
+    super_reductionism_pyramid -> Phenomena;
+    super_relativity -> Phenomena;
+    super_string_theory -> Phenomena;
+
+    scientific_phenomena_validate -> Phenomena;
+
+    quantum_circuit_fry -> Circuit;
+    quantum_circuit_get_status -> Circuit;
+    scientific_phenomena_validate -> validate [color=green];
+    quantum_circuit_get_status -> get_status [color=green];
+}

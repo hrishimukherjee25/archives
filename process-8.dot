@@ -1,0 +1,30 @@
+digraph EconomicProcesses {
+  // Microeconomic Processes
+  node [shape=box];
+  Individual [label="Individual Economic\nBehavior: e = (f * p * i)/f"];
+  Productivity [label="Productivity and Income:\ne = p * i"];
+  DecisionMaking [label="Financial Decision-Making:\np = -i * e"];
+
+  // Macroeconomic Processes
+  node [shape=box, color=blue];
+  AggregateOutput [label="Aggregate Economic Output:\nE = (F * P * I * M^2)/F"];
+  NationalProductivity [label="National Productivity and\nTransactions: E = P * I * M^2"];
+  GovernmentStability [label="Government Intervention and\nStability: I * M^2 ≠ 0, P = E/(I * M^2)"];
+
+  // Societal States
+  node [shape=ellipse, color=green];
+  EnlightenedState [label="Enlightened State:\ne = f * f^-1 * p * imm"];
+  InternetEconomy [label="Internet and IP Economy:\nE = (F * P * IE * IP)/F, E = P * IE * IP"];
+  ZombieState [label="Zombie and Neutrally Suppressed State:\nE = P * I * M^2 * Z"];
+
+  // Connections
+  Individual -> Productivity -> DecisionMaking;
+  AggregateOutput -> NationalProductivity -> GovernmentStability;
+  EnlightenedState -> InternetEconomy -> ZombieState;
+
+  // Additonal Details (optional)
+  node [shape=plaintext, color=black];
+  label = "Conceptual Economic Processes";
+  style = dashed;
+  additional_info [label="Note: This is a conceptual representation.\nAdjust and refine as needed."];
+}

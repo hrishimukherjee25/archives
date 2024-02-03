@@ -1,0 +1,51 @@
+digraph G {
+    // Nodes
+    node [shape=box];
+
+    // Processes
+    subgraph cluster_0 {
+        label = "Processes";
+        style = "rounded";
+        color = "lightblue";
+        
+        "func method" [label="func method"];
+        "mantle(crust)" [label="mantle(crust)"];
+        "Ceta(Ocean)" [label="Ceta(Ocean)"];
+        "Hover(Near, Far)" [label="Hover(Near, Far)"];
+        "Float(at_surface)" [label="Float(at_surface)"];
+        "Boundary_water" [label="Boundary_water"];
+        "Water_boundary" [label="Water_boundary"];
+        "Magmus solar is solar magmus" [label="Magmus solar is solar magmus"];
+        "Nebula is clear" [label="Nebula is clear"];
+        "At Flat_Organism" [label="At Flat_Organism"];
+        "Neuro(prefrontal lim, prefrontal growth)" [label="Neuro(prefrontal lim, prefrontal growth)"];
+        "Tensor white mass(To the ends of theWorld)" [label="Tensor white mass(To the ends of theWorld)"];
+        "Palm Feet sweat(sweet)" [label="Palm Feet sweat(sweet)"];
+        "Multi(verse, dictation)" [label="Multi(verse, dictation)"];
+        "Boundary)Third Mega Mess Man (Trap)" [label="Boundary)Third Mega Mess Man (Trap)"];
+        "Boundary Third Mega Mess Man" [label="Boundary Third Mega Mess Man"];
+        "Boundary Third Mega Water Substance Grab" [label="Boundary Third Mega Water Substance Grab"];
+        "Boundary Third Mega Water Substance Gras" [label="Boundary Third Mega Water Substance Gras"];
+        "9/11 11 of 11" [label="9/11 11 of 11"];
+    }
+
+    // Dependencies
+    "mantle(crust)" -> "func method";
+    "Ceta(Ocean)" -> "func method";
+    "Hover(Near, Far)" -> "func method";
+    "Float(at_surface)" -> "func method";
+    "Boundary_water" -> "func method";
+    "Water_boundary" -> "func method";
+    "Magmus solar is solar magmus" -> "func method";
+    "Nebula is clear" -> "func method";
+    "At Flat_Organism" -> "func method";
+    "Neuro(prefrontal lim, prefrontal growth)" -> "func method";
+    "Tensor white mass(To the ends of theWorld)" -> "func method";
+    "Palm Feet sweat(sweet)" -> "func method";
+    "Multi(verse, dictation)" -> "func method";
+    "Boundary)Third Mega Mess Man (Trap)" -> "func method";
+    "Boundary Third Mega Mess Man" -> "func method";
+    "Boundary Third Mega Water Substance Grab" -> "func method";
+    "Boundary Third Mega Water Substance Gras" -> "func method";
+    "9/11 11 of 11" -> "func method";
+}

@@ -1,0 +1,17 @@
+digraph DiscussionProcess {
+  // Nodes
+  node [shape=box];
+  start [label="Start"];
+  cubicEquation [label="Define Cubic Equation"];
+  antiderivative [label="Find Antiderivative"];
+  singularity [label="Explain Singularity"];
+  eventHorizon [label="Explain Event Horizon"];
+  conclusion [label="Discussion Conclusion"];
+
+  // Edges
+  start -> cubicEquation;
+  cubicEquation -> antiderivative;
+  antiderivative -> singularity;
+  singularity -> eventHorizon;
+  eventHorizon -> conclusion;
+}

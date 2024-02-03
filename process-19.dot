@@ -1,0 +1,26 @@
+digraph ProcessFlow {
+    // Nodes
+    node [shape=box];
+    A [label="Start"];
+    B [label="Mantle(crust)"];
+    C [label="Ceta(Ocean)"];
+    D [label="Hover(Near, Far)"];
+    E [label="Float(at_surface)"];
+    F [label="Boundary_water"];
+    G [label="Water_boundary"];
+    H [label="Magmus solar is solar magmus"];
+    I [label="Nebula is clear"];
+    J [label="At Flat_Organism"];
+    K [label="Neuro(prefrontal lim, prefrontal growth)"];
+    L [label="Tensor white mass(To the ends of the World)"];
+    M [label="Palm Feet sweat(sweet)"];
+    N [label="Multi(verse, dictation)"];
+    O [label="Boundary Third Mega Mess Man (Trap)"];
+    P [label="Boundary Third Mega Water Substance Grab"];
+    Q [label="Boundary Third Mega Water Substance Grasp"];
+    R [label="9/11 (11 of 11)"];
+    S [label="End"];
+
+    // Edges
+    A -> B -> C -> D -> E -> F -> G -> H -> I -> J -> K -> L -> M -> N -> O -> P -> Q -> R -> S;
+}

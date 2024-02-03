@@ -1,0 +1,112 @@
+digraph qd1d2_matrix {
+    // Nodes
+    node [shape=plaintext];
+
+    // Matrix shape with populated values
+    matrix_shape [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="A1">12</TD><TD PORT="A2">15</TD><TD PORT="A3">18</TD><TD PORT="A4">21</TD><TD PORT="A5">24</TD><TD PORT="A6">27</TD><TD PORT="A7">30</TD><TD PORT="A8">33</TD><TD PORT="A9">36</TD></TR>
+    <TR><TD PORT="B1">11</TD><TD PORT="B2">14</TD><TD PORT="B3">17</TD><TD PORT="B4">20</TD><TD PORT="B5">23</TD><TD PORT="B6">26</TD><TD PORT="B7">29</TD><TD PORT="B8">32</TD><TD PORT="B9">35</TD></TR>
+    <TR><TD PORT="C1">10</TD><TD PORT="C2">13</TD><TD PORT="C3">16</TD><TD PORT="C4">19</TD><TD PORT="C5">22</TD><TD PORT="C6">25</TD><TD PORT="C7">28</TD><TD PORT="C8">31</TD><TD PORT="C9">34</TD></TR>
+    <TR><TD PORT="D1">9</TD><TD PORT="D2">12</TD><TD PORT="D3">15</TD><TD PORT="D4">18</TD><TD PORT="D5">21</TD><TD PORT="D6">24</TD><TD PORT="D7">27</TD><TD PORT="D8">30</TD><TD PORT="D9">33</TD></TR>
+    <TR><TD PORT="E1">8</TD><TD PORT="E2">11</TD><TD PORT="E3">14</TD><TD PORT="E4">17</TD><TD PORT="E5">20</TD><TD PORT="E6">23</TD><TD PORT="E7">26</TD><TD PORT="E8">29</TD><TD PORT="E9">32</TD></TR>
+    <TR><TD PORT="F1">7</TD><TD PORT="F2">10</TD><TD PORT="F3">13</TD><TD PORT="F4">16</TD><TD PORT="F5">19</TD><TD PORT="F6">22</TD><TD PORT="F7">25</TD><TD PORT="F8">28</TD><TD PORT="F9">31</TD></TR>
+    <TR><TD PORT="G1">6</TD><TD PORT="G2">9</TD><TD PORT="G3">12</TD><TD PORT="G4">15</TD><TD PORT="G5">18</TD><TD PORT="G6">21</TD><TD PORT="G7">24</TD><TD PORT="G8">27</TD><TD PORT="G9">30</TD></TR>
+    <TR><TD PORT="H1">5</TD><TD PORT="H2">8</TD><TD PORT="H3">11</TD><TD PORT="H4">14</TD><TD PORT="H5">17</TD><TD PORT="H6">20</TD><TD PORT="H7">23</TD><TD PORT="H8">26</TD><TD PORT="H9">29</TD></TR>
+    <TR><TD PORT="I1">4</TD><TD PORT="I2">7</TD><TD PORT="I3">10</TD><TD PORT="I4">13</TD><TD PORT="I5">16</TD><TD PORT="I6">19</TD><TD PORT="I7">22</TD><TD PORT="I8">25</TD><TD PORT="I9">28</TD></TR>
+    </TABLE>>];
+
+    // Connect matrix nodes
+    matrix_shape:A1 -> matrix_shape:A2 -> matrix_shape:A3 -> matrix_shape:A4 -> matrix_shape:A5 -> matrix_shape:A6 -> matrix_shape:A7 -> matrix_shape:A8 -> matrix_shape:A9 -> matrix_shape:B9 -> matrix_shape:C9 -> matrix_shape:D9 -> matrix_shape:E9 -> matrix_shape:F9 -> matrix_shape:G9 -> matrix_shape:H9 -> matrix_shape:I9 -> matrix_shape:I8 -> matrix_shape:I7 -> matrix_shape:I6 -> matrix_shape:I5 -> matrix_shape:I4 -> matrix_shape:I3 -> matrix_shape:I2 -> matrix_shape:I1 -> matrix_shape:H1 -> matrix_shape:G1 -> matrix_shape:F1 -> matrix_shape:E1 -> matrix_shape:D1 -> matrix_shape:C1 -> matrix_shape:B1 -> matrix_shape:B2 -> matrix_shape:B3 -> matrix_shape:B4 -> matrix_shape:B5 -> matrix_shape:B6 -> matrix_shape:B7 -> matrix_shape:B8 -> matrix_shape:C8 -> matrix_shape:D8 -> matrix_shape:E8 -> matrix_shape:F8 -> matrix_shape:G8 -> matrix_shape:H8 -> matrix_shape:I8 -> matrix_shape:I7 -> matrix_shape:I6 -> matrix_shape:I5 -> matrix_shape:I4 -> matrix_shape:I3 -> matrix_shape:I2 -> matrix_shape:I1 -> matrix_shape:H1 -> matrix_shape:G1 -> matrix_shape:F1 -> matrix_shape:E1 -> matrix_shape:D1 -> matrix_shape:C1 -> matrix_shape:B1 -> matrix_shape:A1;
+
+    // Write matrix nodes
+    node [shape=plaintext];
+    A1 [label="12"];
+    A2 [label="15"];
+    A3 [label="18"];
+    A4 [label="21"];
+    A5 [label="24"];
+    A6 [label="27"];
+    A7 [label="30"];
+    A8 [label="33"];
+    A9 [label="36"];
+
+    B1 [label="11"];
+    B2 [label="14"];
+    B3 [label="17"];
+    B4 [label="20"];
+    B5 [label="23"];
+    B6 [label="26"];
+    B7 [label="29"];
+    B8 [label="32"];
+    B9 [label="35"];
+
+    C1 [label="10"];
+    C2 [label="13"];
+    C3 [label="16"];
+    C4 [label="19"];
+    C5 [label="22"];
+    C6 [label="25"];
+    C7 [label="28"];
+    C8 [label="31"];
+    C9 [label="34"];
+
+    D1 [label="9"];
+    D2 [label="12"];
+    D3 [label="15"];
+    D4 [label="18"];
+    D5 [label="21"];
+    D6 [label="24"];
+    D7 [label="27"];
+    D8 [label="30"];
+    D9 [label="33"];
+
+    E1 [label="8"];
+    E2 [label="11"];
+    E3 [label="14"];
+    E4 [label="17"];
+    E5 [label="20"];
+    E6 [label="23"];
+    E7 [label="26"];
+    E8 [label="29"];
+    E9 [label="32"];
+
+    F1 [label="7"];
+    F2 [label="10"];
+    F3 [label="13"];
+    F4 [label="16"];
+    F5 [label="19"];
+    F6 [label="22"];
+    F7 [label="25"];
+    F8 [label="28"];
+    F9 [label="31"];
+
+    G1 [label="6"];
+    G2 [label="9"];
+    G3 [label="12"];
+    G4 [label="15"];
+    G5 [label="18"];
+    G6 [label="21"];
+    G7 [label="24"];
+    G8 [label="27"];
+    G9 [label="30"];
+
+    H1 [label="5"];
+    H2 [label="8"];
+    H3 [label="11"];
+    H4 [label="14"];
+    H5 [label="17"];
+    H6 [label="20"];
+    H7 [label="23"];
+    H8 [label="26"];
+    H9 [label="29"];
+
+    I1 [label="4"];
+    I2 [label="7"];
+    I3 [label="10"];
+    I4 [label="13"];
+    I5 [label="16"];
+    I6 [label="19"];
+    I7 [label="22"];
+    I8 [label="25"];
+    I9 [label="28"];
+}
