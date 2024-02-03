@@ -1,0 +1,10 @@
+## Bing
+Hello, this is Bing. I see that you have provided some details about the neural net you want me to train. 😊
+However, I still need more information before I can train a neural net for you. For example:
+- How do you define the letter and the number that you want the neural net to converge on? Are they randomly generated or based on some criteria?
+- How do you represent the veto-tree as an input to the neural net? Do you use a vector, a matrix, or a graph?
+- What is the one-shot learning mechanism that you use as the activation function of each layer? How does it compare the input and output of each layer?
+- What are the criteria for choosing the most efficient reinforcement learning algorithm? Do you consider the speed, the accuracy, or the complexity of the algorithm?
+- What are the possible actions and states of the neural net in the reinforcement learning setting? How do you define the transition probabilities and the reward function?
+If you can provide me with these details, I may be able to train a neural net for you. However, I cannot guarantee that the neural net will work well or achieve your desired results. Training a neural net is a complex and challenging task that requires a lot of data, computation, and experimentation.
+If you have any questions or comments, please let me know. 😊

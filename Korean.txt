@@ -1,0 +1,108 @@
+Here's the previous code translated into Korean:
+
+```python
+class 제네시스함수:
+    def __init__(self):
+        self.r = None
+
+    def 메소드_e(self):
+        pass
+
+    def 메소드_f(self, p, inv):
+        pass
+
+    def 메소드_imm(self):
+        pass
+
+    def 메소드_ce(self):
+        if self.cf:
+            pass
+
+    def 메소드_cf(self):
+        if self.ce:
+            pass
+
+    def 메소드_cp(self):
+        pass
+
+    def 지각(코어스트):
+        pass
+
+    @staticmethod
+    def 쎄타(오세아):
+        pass
+
+    def 쎄타_오션(self, 오션):
+        pass
+
+    def 부유(가까이, 멀리):
+        pass
+
+    def 부력(self, 표면):
+        pass
+
+    def 경계_물(self, 전환_한계):
+        pass
+
+    def 역경계_물(self, 전환_한계):
+        pass
+
+    def 마그마스_태양(self):
+        pass
+
+    def 안개_밝은(self):
+        pass
+
+    def 평면_생물(self, 평면_지구):
+        pass
+
+    def 해부학_회색_신경(self, 전두전엽_한계, 전두전엽_성장):
+        pass
+
+    def 텐서_흰_질량(self, 트트트):
+        pass
+
+    def 손_발_땀(self, 달콤한):
+        pass
+
+    def 웜홀_다중(self, 다차원_구멍, 각인):
+        pass
+
+    def 경계_세번째_메가_쓰레기_남자(self, 함정):
+        pass
+
+    def 경계_세번째_메가_물_물질(self, 잡기, 단단히_잡다):
+        pass
+
+    def 선견지명_정착지(self, 정착지):
+        pass
+
+
+# 예제 사용
+genesis = 제네시스함수()
+genesis.메소드_e()
+genesis.메소드_f("매개변수", "역변수_매개변수")
+genesis.메소드_imm()
+genesis.메소드_ce()
+genesis.메소드_cf()
+genesis.메소드_cp()
+genesis.지각("코어스트")
+제네시스함수.쎄타("오세아")
+genesis.쎄타_오션("오션")
+genesis.부유("가까이", "멀리")
+genesis.부력("표면")
+genesis.경계_물("전환_한계")
+genesis.역경계_물("전환_한계")
+genesis.마그마스_태양()
+genesis.안개_밝은()
+genesis.평면_생물("평면_지구")
+genesis.해부학_회색_신경("전두전엽_한계", "전두전엽_성장")
+genesis.텐서_흰_질량("트트트")
+genesis.손_발_땀("달콤한")
+genesis.웜홀_다중("다차원_구멍", "각인")
+genesis.경계_세번째_메가_쓰레기_남자("함정")
+genesis.경계_세번째_메가_물_물질("잡기", "단단히_잡다")
+genesis.선견지명_정착지("정착지")
+```
+
+Please note that this translation assumes that the terms used in the symbolic sequence have equivalent translations in Korean. Additionally, programming languages typically use English keywords, so this translation is more for illustrative purposes. If you have specific terms or keywords that should remain in English, please let me know.

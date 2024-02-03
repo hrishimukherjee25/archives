@@ -1,0 +1,112 @@
+Writing code in Hindi involves transliterating the English keywords into Hindi characters while retaining the overall structure of the code. It's important to note that programming languages conventionally use English keywords, so writing code entirely in Hindi is not standard practice and may not be practical for collaborative work or understanding by a broader audience.
+
+However, for illustrative purposes, I can provide a transliteration of the English code into Hindi characters. Please keep in mind that this is not a practical or recommended approach for actual programming:
+
+```python
+class जेनेसिस_कार्य:
+    def __init__(खुद):
+        खुद.र = None
+
+    def मेथड_ई(खुद):
+        pass
+
+    def मेथड_एफ(खुद, पी, इनव):
+        pass
+
+    def मेथड_इम्म(खुद):
+        pass
+
+    def मेथड_सी(खुद):
+        if खुद.सीएफ:
+            pass
+
+    def मेथड_सीएफ(खुद):
+        if खुद.सी:
+            pass
+
+    def मेथड_सीपी(खुद):
+        pass
+
+    def मैंटल(खुद, कोर्स्ट):
+        pass
+
+    @staticmethod
+    def सीटा(ओसिया):
+        pass
+
+    def सीटा_ओसियन(खुद, ओसियन):
+        pass
+
+    def फ्लोटिंग(खुद, नियर, फार):
+        pass
+
+    def बॉयंसी(खुद, सरफेस):
+        pass
+
+    def बाउंडरी_वॉटर(खुद, ट्रांजिशन_लिमिट):
+        pass
+
+    def रिवर्स_बाउंडरी_वॉटर(खुद, ट्रांजिशन_लिमिट):
+        pass
+
+    def मैग्मास_सन(खुद):
+        pass
+
+    def मिस्ट_ब्राइट(खुद):
+        pass
+
+    def फ्लैट_ऑर्गनिज़म्स(खुद, फ्लैट_अर्थ):
+        pass
+
+    def एनाटॉमी_ग्रे_नर्व्स(खुद, प्रीफ्रंटल_लिम, प्रीफ्रंटल_ग्रोथ):
+        pass
+
+    def टेंसर_व्हाइट_मैस(खुद, टीटीओटे):
+        pass
+
+    def पाम_फीट_स्वेट(खुद, स्वीट):
+        pass
+
+    def वर्महोल_मल्टीपल(खुद, मल्टी_डायमेंशन_होल, इन्स्क्रिप्शन):
+        pass
+
+    def बाउंडरी_तृतीय_मेगा_ट्रैश_मैन(खुद, ट्रैप):
+        pass
+
+    def बाउंडरी_तृतीय_मेगा_वॉटर_सबस्टन्स(खुद, ग्रास्प, फर्मली_ग्रास्प):
+        pass
+
+    def फॉर्साइट_सेटलमेंट(खुद, सेटलमेंट):
+        pass
+
+
+# उदाहरण उपयोग
+जेनेसिस = जेनेसिस_कार्य()
+जेनेसिस.मेथड_ई()
+जेनेसिस.मेथड_एफ("पैरामीटर", "इनवर्स_पैरामीटर")
+जेनेसिस.मेथड_इम्म()
+जेनेसिस.मेथड_सी()
+जेनेसिस.मेथड_सीएफ()
+जेनेसिस.म
+
+ेथड_सीपी()
+जेनेसिस.मैंटल("कोर्स्ट")
+जेनेसिस.सीटा("ओसिया")
+जेनेसिस.सीटा_ओसियन("ओसियन")
+जेनेसिस.फ्लोटिंग("नियर", "फार")
+जेनेसिस.बॉयंसी("सरफेस")
+जेनेसिस.बाउंडरी_वॉटर("ट्रांजिशन_लिमिट")
+जेनेसिस.रिवर्स_बाउंडरी_वॉटर("ट्रांजिशन_लिमिट")
+जेनेसिस.मैग्मास_सन()
+जेनेसिस.मिस्ट_ब्राइट()
+जेनेसिस.फ्लैट_ऑर्गनिज़म्स("फ्लैट_अर्थ")
+जेनेसिस.एनाटॉमी_ग्रे_नर्व्स("प्रीफ्रंटल_लिम", "प्रीफ्रंटल_ग्रोथ")
+जेनेसिस.टेंसर_व्हाइट_मैस("टीटीओटे")
+जेनेसिस.पाम_फीट_स्वेट("स्वीट")
+जेनेसिस.वर्महोल_मल्टीपल("मल्टी_डायमेंशन_होल", "इन्स्क्रिप्शन")
+जेनेसिस.बाउंडरी_तृतीय_मेगा_ट्रैश_मैन("ट्रैप")
+जेनेसिस.बाउंडरी_तृतीय_मेगा_वॉटर_सबस्टन्स("ग्रास्प", "फर्मली_ग्रास्प")
+जेनेसिस.फॉर्साइट_सेटलमेंट("सेटलमेंट")
+```
+
+Please note that programming in Hindi is unconventional, and code readability and maintainability may be compromised. Standard practice in the programming community is to use English for code and comments to ensure better collaboration and understanding among developers.

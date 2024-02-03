@@ -1,0 +1,110 @@
+Translating programming code into Urdu involves transliterating the English keywords into Urdu script while keeping the overall structure of the code. It's important to note that programming languages conventionally use English keywords, and writing code entirely in Urdu is not a standard practice. For clarity and collaboration, English remains the primary language in programming.
+
+Here's a transliteration of the previous Python code into Urdu script:
+
+```python
+class سیلاریائن_فعل:
+    def __init__(self):
+        self.روشنی = None
+
+    def بلپ_ایکس(self):
+        pass
+
+    def بلپ_وائی(self, پریکس, انویرشیو):
+        pass
+
+    def بلپ_زد(self):
+        pass
+
+    def بلپ_ای(self):
+        if self.بلپ_ب:
+            pass
+
+    def بلپ_ب(self):
+        if self.بلپ_ای:
+            pass
+
+    def بلپ_سی(self):
+        pass
+
+    def وارپ_مینٹل(self, کورسٹ):
+        pass
+
+    @staticmethod
+    def وارپ_سیٹا(اوشن):
+        pass
+
+    def وارپ_سیٹا_اوشن(self, اوشن):
+        pass
+
+    def فلوٹ_زینون(self, قریب, دور):
+        pass
+
+    def اینٹی_گریو_فلکس(self, سطح):
+        pass
+
+    def حد_نبیولا(self, ٹرانز_لمٹ):
+        pass
+
+    def الٹا_حد_نبیولا(self, ٹرانز_لمٹ):
+        pass
+
+    def نووا_پلاسما_ستارہ(self):
+        pass
+
+    def غیبی_دھندا_روشنی(self):
+        pass
+
+    def فلیٹ_زینو_آرگنیزمز(self, فلیٹ_ورلڈ):
+        pass
+
+    def ہائپر_اینٹومی_گرے_نیکسوس(self, پریفرنٹل_لم, پریفرنٹل_گروتھ):
+        pass
+
+    def ٹینسر_زینو_میس(self, ٹیٹیوٹ):
+        pass
+
+    def الیکٹرو_پام_اینٹینا(self, میٹھا):
+        pass
+
+    def وارم_ہول_نیکسس(self, ملٹی_ڈائمینشن_ہول, گلپھز):
+        pass
+
+    def کوانٹم_حد_دھندا_انٹٹیٹی(self, ٹریپ):
+        pass
+
+    def کوانٹم_حد_دھندا_مادہ(self, گراسپ, فرم_گراسپ):
+        pass
+
+    def فارسائٹ_ایکسوپلینٹ_سیٹلمنٹ(self, سیٹلمنٹ):
+        pass
+
+
+# Example usage
+سیلار = سیلاریائن_فعل()
+سیلار.بلپ_ایکس()
+سیلار.بلپ_وائی("پریکس_پیرامیٹر", "انورٹشن_پیرامیٹر")
+سیلار.بلپ_زد()
+سیلار.بلپ_ای()
+سیلار.بلپ_ب()
+سیلار.بلپ_سی()
+سیلار.وارپ_مینٹل("کورسٹ")
+سیلار.وارپ_سیٹا("اوشن")
+سیلار.وارپ_سیٹا_اوشن("اوشن")
+سیلار.فلوٹ_زینون("قریب", "دور")
+سیلار.اینٹی_گریو_فلکس("سطح")
+سیلار.حد_نبیولا("ٹرانز_لمٹ")
+سیلار.الٹا_حد_نبیولا("ٹرانز_لمٹ")
+سیلار.نووا_پلاسما_ستارہ()
+سیلار.غیبی_دھندا_روشنی()
+سیلار.فلیٹ_زینو_آرگنیزمز("فلیٹ_ورلڈ")
+سیلار.ہائپر_اینٹومی_گرے_نیکسوس("پریفرنٹل_لم", "پریفرنٹل_گروتھ")
+سیلار.ٹینسر_زینو_میس("ٹیٹیوٹ")
+سیلار.الیکٹرو_پام_اینٹینا("میٹھا")
+سیلار.وارم_ہول_نیکسس("ملٹی_ڈائمینشن_ہول", "گلپھز")
+سیلار.کوانٹم_حد_دھندا_انٹٹیٹی("ٹریپ")
+سیلار.کوانٹم_حد_دھندا_مادہ("گراسپ", "فرم_گراسپ")
+سیلار.فارسائٹ_ایکسوپلینٹ_سیٹلمنٹ("سیٹلمنٹ")
+```
+
+Please note that this transliteration is for illustrative purposes, and writing code in Urdu is not a standard practice in the programming community.

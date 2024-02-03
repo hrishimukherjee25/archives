@@ -1,0 +1,32 @@
+------------------------------------------------------------
+|                       Farm Office                         |
+|                    (Includes Server Room)                |
+------------------------------------------------------------
+|                  Livestock Area (10 acres)                |
+|                                                           |
+|                                                           |
+------------------------------------------------------------
+|                    Irrigation Pond                        |
+|                 (Water Reservoir)                         |
+|                                                           |
+------------------------------------------------------------
+|                                                           |
+|              Crop Fields (30 acres total)                 |
+|                                                           |
+|         Field 1           Field 2            Field 3      |
+|    (10 acres)           (10 acres)         (10 acres)     |
+|    - Corn               - Soybeans         - Wheat        |
+|    - Tomatoes           - Lettuce          - Peppers      |
+|                                                           |
+|                Irrigation Systems (Drip lines)            |
+|                Center Pivot Irrigation System             |
+|                                                           |
+------------------------------------------------------------
+|                 Infrastructure Area                       |
+|            (Equipment Storage, Workshops)                 |
+|               (Tractors, Harvesters, etc.)                |
+|                    (Includes Server Room)                 |
+------------------------------------------------------------
+|                       Water Management                    |
+|               (Irrigation Systems, Drainage)              |
+------------------------------------------------------------
